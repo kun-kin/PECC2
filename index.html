@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PECC_test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./lib/css/style.css">
+    <link rel="stylesheet" href="./lib//css/responsive.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-logo">
+                    <h1>
+                        <a href="#">
+                            <img src="./images/logo.svg" alt="">
+                        </a>
+                    </h1>
+                </div>
+                <div class="header-menu_right">
+                    <nav class="nav">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="" class="menu-link">trang chủ</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">giới thiệu</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">lĩnh vực hoạt động</a>
+                                <div class="submenu">
+                                    <div class="wrap-submenu">
+                                        <div class="submenu-item">
+                                            <h3 class="submenu-title">
+                                                tư vấn xây dựng điện
+                                            </h3>
+                                            <div class="submenu-cont">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://www.youtube.com/">Khảo sát</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Thủy điện & năng lượng tái tạo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Nhiệt điện và điện hạt nhân</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Lưới điện</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Đào tạo,nghiên cứu và phát triển</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Trung tâm năng lượng số</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="submenu-item">
+                                            <h3 class="submenu-title">
+                                                kinh doanh
+                                            </h3>
+                                            <div class="submenu-cont">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Tổng thầu EFC</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Chế tạo cơ khí</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Quản lí và vận hành nhà máy điện</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="submenu-item">
+                                            <h3 class="submenu-title">
+                                                đầu tư
+                                            </h3>
+                                            <div class="submenu-cont">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Đầu tư</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">dự án</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">quan hệ đầu tư</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">tin tức</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">liên hệ</a>
+                                <div class="submenu">
+                                    <div class="wrap-submenu">
+                                        <div class="submenu-item">
+                                            <h3 class="submenu-title">
+                                                tư vấn báo giá
+                                            </h3>
+                                            <div class="submenu-cont"></div>
+                                        </div>
+                                        <div class="submenu-item">
+                                            <h3 class="submenu-title">
+                                                liên hệ
+                                            </h3>
+                                            <div class="submenu-cont"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-search">
+                        <div class="header-search__icons">
+                            <span class="icons-search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span class="icons-close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                        </div>
+                        <div class="search-popup">
+                            <div class="search-popup__content">
+                                <form action="#" class="form-search">
+                                    <input type="text" name="search-name" id="" class="search-name" placeholder="Tìm kiếm">
+                                    <button class="search-btn">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-language">
+                        <div class="language-icons">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>VN</span>
+                        </div>
+                        <div class="language-popup">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/change_langu-vn.svg" alt="">
+                                        <span>Tiếng Việt</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/change_langu-en.svg" alt="">
+                                        <span>English</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu-toggle">
+                        <span class="style-icons"></span>
+                        <span class="style-icons"></span>
+                        <span class="style-icons"></span>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="banner">
+                <div class="banner-slide">
+                    <div class="banner-slide__content">
+                        <div class="banner-slide__content_item">
+                            <div class="banner-img">
+                                <img src="./images/banner.jpg" alt="">
+                            </div>
+
+                            <div class="banner-text">
+                                <span>mang đến giá trị khác biệt1</span>
+                            </div>
+                        </div>
+                        <div class="banner-slide__content_item">
+                            <div class="banner-img">
+                                <img src="./images/banner1.jpg" alt="">
+                            </div>
+                            <div class="banner-text">
+                                <span>mang đến giá trị khác biệt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="about-main">
+                    <div class="wrap-about">
+                        <div class="cont-about">
+                            <h2 class="title-about" data-aos="fade-up">
+                                về peec2
+                            </h2>
+                            <div class="content-about" data-aos="fade-up" data-aos-delay="200">
+                                Trải qua 35 năm hoạt động, Công ty Cổ phần Tư vấn Xây dựng Điện 2 (PECC2) đã không ngừng phát triển và trở thành một trong những thương hiệu mạnh về tư vấn năng lượng của Việt Nam. Uy tín thương hiệu PECC2 đã được khẳng định với hơn 100 công trình nguồn
+                                điện quy mô lớn và hàng trăm công trình lưới điện trên cả nước.
+                            </div>
+                            <div class="view-all" data-aos="fade-up" data-aos-delay="300">
+                                <a href="#">
+                                    <span>Xem tất cả</span><i class="fa-solid fa-alicorn"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="thumb-about">
+                            <div class="img-about">
+                                <div class="img-about__item">
+                                    <img src="./images/ab1.jpg" alt="" data-aos="fade-left" data-aos-delay="500">
+                                </div>
+                                <div class="img-about__item">
+                                    <img src="./images/ab2.jpg" alt="" data-aos="fade-right" data-aos-delay="500">
+                                </div>
+                            </div>
+                            <div class="video-about">
+                                <a data-fancybox href="./images/video/Download the Best Free Electric Videos.mp4">
+                                    <span>
+                                        <img src="./images/videoplay.png" alt="">
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="activity">
+                <div class="activity-main">
+                    <div class="activity-container">
+                        <div class=" title" data-aos="fade-down" data-aos-duration="3000">
+                            <h2>lĩnh vực hoạt động</h2>
+                        </div>
+                        <div class=" infor-about">
+                            <div class="infor-about__main">
+                                <div class="img-infor" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                                    <img src="./images/ciclebig1.png" alt="" class="bg-img-infor">
+                                    <div class="img-infor__cont">
+                                        <div class="img-infor__cont_item">
+                                            <div class="icons">
+                                                <img src="./images/icon1_activiti.png" alt="">
+                                            </div>
+                                            <div class="subtitle">
+                                                <a href="#">đầu tư</a>
+                                            </div>
+                                        </div>
+                                        <div class="img-infor__cont_item">
+                                            <div class="icons">
+                                                <img src="./images/icon2_activiti.png" alt="">
+                                            </div>
+                                            <div class="subtitle">
+                                                <a href="#">tư vấn</a>
+                                            </div>
+                                        </div>
+                                        <div class="img-infor__cont_item">
+                                            <div class="icons">
+                                                <img src="./images/icon3_activiti.png" alt="">
+                                            </div>
+                                            <div class="subtitle">
+                                                <a href="#">kinh doanh</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="list-infor">
+                                    <div class="list-infor__item" data-aos="fade-left" data-aos-delay="500" data-aos-duration="5000">
+                                        <div class="dot-item1"></div>
+                                    </div>
+                                    <div class="list-infor__item" data-aos="fade-left" data-aos-delay="500" data-aos-duration="5000">
+                                        <div class="dot-item2"></div>
+                                    </div>
+                                    <div class="list-infor__item" data-aos="fade-left" data-aos-delay="500" data-aos-duration="5000">
+                                        <div class="img">
+                                            <div class="img-cont">
+                                                <img src="./images/activity1_.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <div class="desc">
+                                            <p>Hơn 100 dự án nguồn điện</p>
+                                            <span> > <p class="number">25.000</p>mw</span>
+                                        </div>
+                                    </div>
+                                    <div class="list-infor__item" data-aos="fade-left" data-aos-delay="500" data-aos-duration="5000">
+                                        <div class="img">
+                                            <div class="img-cont">
+                                                <img src="./images/activity2.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <div class="desc">
+                                            <p>Hơn 150 trạm biến áp</p>
+                                            <span> > <p class="number">28.000</p>mva</span>
+                                        </div>
+                                    </div>
+                                    <div class="list-infor__item" data-aos="fade-left" data-aos-delay="500" data-aos-duration="5000">
+                                        <div class="img">
+                                            <div class="img-cont">
+                                                <img src="./images/activity3.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <div class="desc">
+                                            <p>Hơn 600 dự án đường dây</p>
+                                            <span> > <p class="number">6000</p>km</span>
+                                        </div>
+                                    </div>
+                                    <div class="list-infor__item" data-aos="fade-left" data-aos-delay="500" data-aos-duration="5000">
+                                        <div class="img">
+                                            <div class="img-cont">
+                                                <img src="./images/activity4.jpg" alt="">
+                                            </div>
+
+                                        </div>
+                                        <div class="desc">
+                                            <p>Quản lí vẫn hành nhà máy điện</p>
+                                            <span> > <p class="number">2300</p>mw</span>
+                                        </div>
+                                    </div>
+                                    <div class="list-infor__item" data-aos="fade-left" data-aos-delay="500" data-aos-duration="5000">
+                                        <div class="dot-item2"></div>
+                                    </div>
+                                    <div class="list-infor__item" data-aos="fade-left" data-aos-delay="500" data-aos-duration="5000">
+                                        <div class="dot-item1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="project">
+                <div class="project-main">
+                    <div class="project-title">
+                        <h2>dự án tiêu biểu</h2>
+                    </div>
+                    <div class="project-slide" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="project-slide__content">
+                            <div class="project-slide__content_item">
+                                <img src="./images/970_crop_Turbin_gio_Dien_Gio_Tan_Thuan.jpg" alt="">
+                                <span>Hệ thống lọc ccccc</span>
+                            </div>
+                            <div class="project-slide__content_item">
+                                <img src="./images/970_crop_Turbin_gio_Dien_Gio_Tan_Thuan.jpg" alt="">
+                                <span>Hệ thống lọc ccccc</span>
+                            </div>
+                            <div class="project-slide__content_item">
+                                <img src="./images/970_crop_Turbin_gio_Dien_Gio_Tan_Thuan.jpg" alt="">
+                                <span>Hệ thống lọc ccccc</span>
+                            </div>
+                            <div class="project-slide__content_item">
+                                <img src="./images/970_crop_Turbin_gio_Dien_Gio_Tan_Thuan.jpg" alt="">
+                                <span>Hệ thống lọc ccccc</span>
+                            </div>
+                            <div class="project-slide__content_item">
+                                <img src="./images/970_crop_Turbin_gio_Dien_Gio_Tan_Thuan.jpg" alt="">
+                                <span>Hệ thống lọc ccccc</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="relation">
+                <div class="relation-main">
+                    <div class="wrap-relation">
+                        <div class="relation-left">
+                            <h2 data-aos="fade-up">quan hệ đầu tư</h2>
+                            <div class="left-about-rela" data-aos="fade-up" data-aos-duration="2000">
+                                Hợp tác hiệu quả với các đối tác tin cậy, liên tục gia tăng giá trị công ty, lợi ích cổ đông
+                            </div>
+                            <div class="view-all-rela" data-aos="fade-up" data-aos-duration="5000">
+                                <a href="#">Xem tất cả</a>
+                            </div>
+                        </div>
+                        <div class="relation-right">
+                            <div class="thumd-rela">
+                                <div class="thumd-rela-one">
+                                    <div class="one-thumd-item" data-aos="zoom-in">
+                                        <div class="thumd-rela">
+                                            <a href="#">
+                                            </a>
+                                        </div>
+                                        <div class="desc-rela">
+                                            <span>quản trị công ty</span>
+                                        </div>
+                                    </div>
+                                    <div class="one-thumd-item" data-aos="zoom-in">
+                                        <div class="thumd-rela">
+                                            <a href="#">
+                                            </a>
+                                        </div>
+                                        <div class="desc-rela">
+                                            <span>quản trị công ty</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="thumd-rela-one">
+                                    <div class="one-thumd-item" data-aos="zoom-in">
+                                        <div class="thumd-rela">
+                                            <a href="#">
+                                            </a>
+                                        </div>
+                                        <div class="desc-rela">
+                                            <span>quản trị công ty</span>
+                                        </div>
+                                    </div>
+                                    <div class="one-thumd-item" data-aos="zoom-in">
+                                        <div class="thumd-rela">
+                                            <a href="#">
+                                            </a>
+                                        </div>
+                                        <div class="desc-rela">
+                                            <span>quản trị công ty</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="news-main">
+                    <div class="wrap-news">
+                        <div class="title-new">
+                            <h2 data-aos="fade-down">tin tức mới</h2>
+                            <div class="tabmenu-news">
+                                <div class="tab-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">tin nổi bật</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">tin tổng hợp</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">bản in epecc2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">đấu thầu online</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content-news">
+                                <div class="grid-news">
+                                    <div class="slide-news">
+                                        <div class="content">
+                                            <div class="slider slider-for" data-aos="fade-up">
+                                                <div>
+                                                    <div class="slide-news-img">
+                                                        <img src="./images/570_crop_Picture1.jpg" alt="">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="desc-time">04/01/2022</div>
+                                                        <div class="desc-title">
+                                                            <h3>PECC2 Năm 2021: "Lửa thử vàng gian nan thử sức"</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="slide-news-img">
+                                                        <img src="./images/570_crop_Logo_PECC2__Solgan_Tieng_Anh.jpg" alt="">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="desc-time">04/01/2022</div>
+                                                        <div class="desc-title">
+                                                            <h3>PECC2 Năm 2021: "Lửa thử vàng gian"</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="slide-news-img">
+                                                        <img src="./images/570_crop_IMG_7349.jpg" alt="">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="desc-time">04/01/2022</div>
+                                                        <div class="desc-title">
+                                                            <h3>PECC2 Năm 2021: "Lửa thử vàng gian nan "</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="slide-news-img">
+                                                        <img src="./images/570_crop_IMG_7017.jpg" alt="">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="desc-time">12/01/2022</div>
+                                                        <div class="desc-title">
+                                                            <h3>PECC2 Năm 2021: "Lửa thử vàng gian nan thử sức"</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="slide-news-img">
+                                                        <img src="./images/570_crop_FB_POST_VN.jpg" alt="">
+                                                    </div>
+                                                    <div class="desc">
+                                                        <div class="desc-time">04/01/2022</div>
+                                                        <div class="desc-title">
+                                                            <h3>Năm 2021: "Lửa thử vàng gian nan thử sức"</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slider slider-nav" data-aos="fade-up">
+                                                <div>
+                                                    <div class="slide-news-img">
+                                                        <img src="./images/570_crop_Picture1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="slide-news-img">
+                                                        <img src="./images/570_crop_Logo_PECC2__Solgan_Tieng_Anh.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="slide-news-img">
+                                                        <img src="./images/570_crop_IMG_7349.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="slide-news-img">
+                                                        <img src="./images/570_crop_IMG_7017.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div class="slide-news-img">
+                                                        <img src="./images/570_crop_FB_POST_VN.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-news">
+                                        <ul>
+                                            <li class="list-news__item" data-aos="fade-up">
+                                                <div class="list-news__item_left">
+                                                    <div class="left__img">
+                                                        <img src="./images/news_img1.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="list-news__item_right">
+                                                    <span>30/10/2021</span>
+                                                    <h3>DỰ ÁN NHÀ MÁY ĐIỆN GIÓ TÂN THUẬN 75 MW HOÀN THÀNH XUẤT SẮC MỤC TIÊU VẬN HÀNH THƯƠNG MẠI (COD)</h3>
+                                                    <p>Đại dịch COVID-19 đã tạo ra áp lực vô cùng to lớn lên tiến độ của các dự án, đặc biệt là các dự án điện gió khi phải nỗ lực “chạy đua” nhằm vận hành thương mại trước ngày 1/11/2021 để được hưởng mức
+                                                        giá FIT ưu đãi (theo Quyết định 39/2018/QĐ-TTg của Thủ tướng Chính phủ). Đối mặt và trải qua muôn vàn khó khăn và thử thách, ngày 30/10/2021, Dự án Nhà máy Điện gió Tân Thuận 75MW chính thức được
+                                                        EVN EPTC công nhận vận hành thương mại (COD). Thành quả này là minh chứng rõ nét cho tinh thần thép và ý chí chưa một lần đầu hàng cùng quyết tâm chinh phục xuất sắc mục tiêu của đội ngũ PECC2.</p>
+                                                </div>
+                                            </li>
+                                            <li class="list-news__item" data-aos="fade-up">
+                                                <div class="list-news__item_left">
+                                                    <div class="left__img">
+                                                        <img src="./images/news_img2.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="list-news__item_right">
+                                                    <span>13/12/2021</span>
+                                                    <h3>CHI NHÁNH XÍ NGHIỆP CƠ ĐIỆN PECC2: 25 NĂM KHẲNG ĐỊNH UY TÍN THƯƠNG HIỆU</h3>
+                                                    <p>Nhân dịp kỷ niệm 25 năm thành lập Chi nhánh Công ty Cổ phần Tư vấn xây dựng Điện 2 – Xí nghiệp Cơ điện (EME), sáng ngày 01/11/2021, đoàn lãnh đạo công ty và lãnh đạo các đơn vị Công ty Cổ phần Tư vấn
+                                                        xây dựng Điện 2 (PECC2) đã có buổi thăm và chúc mừng tại Khu Văn phòng và Nhà xưởng mới của EME tại Long Khánh (Đồng Nai).</p>
+                                                </div>
+                                            </li>
+                                            <li class="list-news__item" data-aos="fade-up">
+                                                <div class="list-news__item_left">
+                                                    <div class="left__img">
+                                                        <img src="./images/news_img3.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="list-news__item_right">
+                                                    <span>30/10/2021</span>
+                                                    <h3>LỄ KHAI GIẢNG CHƯƠNG TRÌNH ĐÀO TẠO LIÊN KẾT LỚP CAO ĐẲNG VẬN HÀNH NHÀ MÁY NHIỆT ĐIỆN</h3>
+                                                    <p>Sáng ngày 2/11/2021, Trường Cao đẳng Điện lực Tp. Hồ Chí Minh (HEPC) phối hợp với Công ty CP Tư vấn Xây dựng Điện 2 (PECC2) tổ chức Chương trình Lễ khai giảng lớp Cao đẳng vận hành nhà máy nhiệt điện
+                                                        niên khóa 2021 – 2024. Chương trình được tổ chức thông qua hình thức trực tuyến với sự tham dự của đại diện lãnh đạo PECC2, Ban giám hiệu nhà trường và 29 tân sinh viên của khóa học.</p>
+                                                </div>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="viewall-news">
+                                    <a href="#">Xem tất cả</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="wrap-footer">
+                    <div class=" footer-item">
+                        <div class="footer-logo">
+                            <div class="footer-logo__img">
+                                <a href="#">
+                                    <img src="./images/logo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="footer-logo__desc">
+                                <img src="./images/footer_caption.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=" footer-item">
+                        <div class="footer-item__cont">
+                            <h3>trụ sở chính</h3>
+                            <p>32 Ngô Thời Nhiệm, Phường Võ Thị Sáu, Quận 3, Tp. HCM, Việt Nam</p>
+                        </div>
+                        <div class="footer-item__cont">
+                            <h3>PECC2 INNOVATION HUB</h3>
+                            <p>45 Đường Số 2, Phường Trường Thọ, Tp.Thủ Đức, Tp. HCM, Việt Nam</p>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-item__cont">
+                            <h3>XÍ NGHIỆP KHẢO SÁT (XNKSTHMN)</h3>
+                            <p>45 Dân Chủ, P.Bình Thọ, Tp.Thủ Đức,Tp.HCM</p>
+                        </div>
+                        <div class="footer-item__cont">
+                            <h3>XÍ NGHIỆP CƠ ĐIỆN</h3>
+                            <p>Đường số 6, KCN Long Khánh, Xã Bình Lộc, TP. Long Khánh, Đồng Nai</p>
+                        </div>
+                    </div>
+                    <div class=" footer-item">
+                        <div class="footer-item__social">
+                            <h3>pecc2 trên</h3>
+                            <div class="social-icons">
+                                <ul>
+                                    <li class="bg-facebook">
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="bg-youtube">
+                                        <a href="#">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li class="bg-instagram">
+                                        <a href="#">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="wrap-bottom">
+                    <span>Copyright © 2017 -2020 <strong> Công ty Cổ phần Tư vấn Xây dựng Điện 2</strong></span>
+                </div>
+            </div>
+        </footer>
+        <a id="backtotop"></a>
+        <div class="menu-mobile">
+            <div class="wrap-mobile">
+                <span class="close-menu-mobile"><i class="fa-solid fa-xmark"></i></span>
+                <div class="mobile-title">
+                    <h2>pecc2</h2>
+                </div>
+                <div class="mobile-list">
+                    <ul>
+                        <li>
+                            <a href="#">trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="#">lĩnh vực hoạt động</a>
+                            <div class="btn-submenu">
+                            </div>
+                            <div class="submenu-mobile2">
+                                <div class="submenu-mobile2__title back-menu">
+
+                                </div>
+                                <div class="submenu-mobile2__item">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Tư vấn xây dựng điện</a>
+                                            <div class="btn-submenu">
+                                            </div>
+                                            <div class="submenu-mobile3">
+                                                <div class="submenu-mobile3__title back-menu">
+                                                </div>
+                                                <div class="submenu-mobile3__item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Khảo sát</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Thủy điện và năng lượng tái tạo</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Nhiệt điện và điện hạt nhân</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Lưới điện</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Đào tạo,Nghiên cứu và phát triển</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Trung tâm năng lực số</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kinh doanh</a>
+                                            <div class="btn-submenu">
+                                            </div>
+                                            <div class="submenu-mobile3">
+                                                <div class="submenu-mobile3__title back-menu">
+                                                </div>
+                                                <div class="submenu-mobile3__item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Tổng thầu EPC</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Chế tạo cơ khí</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Quản lí và vận hành nhà máy điện</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <a href="#">Đầu tư</a>
+                                            <div class="btn-submenu">
+                                            </div>
+                                            <div class="submenu-mobile3">
+                                                <div class="submenu-mobile3__title back-menu">
+                                                </div>
+                                                <div class="submenu-mobile3__item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Đầu tư</a>
+                                                        </li>
+
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">dự án</a>
+                        </li>
+                        <li>
+                            <a href="#">quan hệ đầu tư</a>
+                        </li>
+                        <li>
+                            <a href="#">tin tức</a>
+                        </li>
+                        <li>
+                            <a href="#">liên hệ</a>
+                            <div class="btn-submenu">
+                            </div>
+                            <div class="submenu-mobile2">
+                                <div class="submenu-mobile2__title back-menu">
+                                </div>
+                                <div class="submenu-mobile2__item">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Tư vấn báo giá</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Liên hệ</a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-search">
+                    <form action="#" class="form-search">
+                        <input type="text" name="search-name" id="" class="search-name" placeholder="Tìm kiếm">
+                        <button class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="./lib/js/style.js"></script>
+
+</body>
+
+</html>
