@@ -1939,8 +1939,9 @@ main .news-main .wrap-news .title-new .content-news .viewall-news a::before {
   position: fixed;
   top: 55px;
   right: 0;
+  left: 0;
   height: 100vh;
-  width: 420px;
+  max-width: 420px;
   background-color: #fafafa;
   transition: all 0.3s linear;
   transform: translateX(100%);
@@ -1979,8 +1980,9 @@ main .news-main .wrap-news .title-new .content-news .viewall-news a::before {
   position: fixed;
   top: 0;
   right: 0;
+  left: 0;
   height: 100vh;
-  width: 420px;
+  max-width: 420px;
   background-color: #fff;
   transition: all 0.3s linear;
   transform: translateX(100%);

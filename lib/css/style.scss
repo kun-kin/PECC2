@@ -1909,8 +1909,9 @@ main {
                         position: fixed;
                         top: 55px;
                         right: 0;
+                        left: 0;
                         height: 100vh;
-                        width: 420px;
+                        max-width: 420px;
                         // background-color: #fff;
                         background-color: rgb(250, 250, 250);
                         transition: all 0.3s linear;
@@ -1950,8 +1951,9 @@ main {
                                         position: fixed;
                                         top: 0;
                                         right: 0;
+                                        left: 0;
                                         height: 100vh;
-                                        width: 420px;
+                                        max-width: 420px;
                                         background-color: #fff;
                                         // background-color: pink;
                                         transition: all 0.3s linear;
