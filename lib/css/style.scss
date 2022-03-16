@@ -755,6 +755,7 @@ main {
                     width: 900px;
                     @media(max-width: 991px) {
                         width: 100%;
+                        overflow: hidden;
                     }
                     &__main {
                         position: relative;

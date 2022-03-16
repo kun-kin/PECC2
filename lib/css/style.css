@@ -771,6 +771,7 @@ main .activity-main .activity-container .infor-about {
 @media (max-width: 991px) {
   main .activity-main .activity-container .infor-about {
     width: 100%;
+    overflow: hidden;
   }
 }
 main .activity-main .activity-container .infor-about__main {
