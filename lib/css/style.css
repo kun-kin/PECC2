@@ -1848,7 +1848,7 @@ main .news-main .wrap-news .title-new .content-news .viewall-news a::before {
   transition: all 0.3s linear;
 }
 .menu-mobile.show-menu .wrap-mobile {
-  right: 0;
+  transform: translateX(0);
   transition: all 0.5s linear;
 }
 
@@ -1871,7 +1871,8 @@ main .news-main .wrap-news .title-new .content-news .viewall-news a::before {
   background-color: #fff;
   position: relative;
   top: 0;
-  right: -100%;
+  right: 0;
+  transform: translateX(100%);
   margin: 0 0 0 auto;
   transition: all 0.5s linear;
 }
