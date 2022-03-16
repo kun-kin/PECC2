@@ -414,6 +414,11 @@ main .banner .banner-slide__content::before {
   background-position: left top;
   z-index: 1;
 }
+@media (max-width: 991px) {
+  main .banner .banner-slide__content::before {
+    display: none;
+  }
+}
 main .banner .banner-slide__content_item {
   position: relative;
 }

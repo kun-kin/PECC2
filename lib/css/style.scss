@@ -430,6 +430,9 @@ main {
                 background: url('../../images/bgbanner.png') no-repeat;
                 background-position: left top;
                 z-index: 1;
+                @media(max-width: 991px) {
+                    display: none;
+                }
             }
             &_item {
                 position: relative;
