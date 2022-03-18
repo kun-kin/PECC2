@@ -1,0 +1,136 @@
+.footer {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        background-color: #1c348d;
+        left: 5px;
+        right: 5px;
+        z-index: 1;
+        top: -1px;
+    }
+    &-main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px 0;
+        .wrap-footer {
+            display: flex;
+            flex-wrap: wrap;
+            .footer-item {
+                flex: 0 0 25%;
+                width: 100%;
+                padding: 0 15px;
+                @media(max-width: 991px) {
+                    flex: 0 0 50%;
+                }
+                @media(max-width:540px) {
+                    flex: 100%;
+                    margin-bottom: 20px;
+                }
+                &__cont {
+                    margin-bottom: 30px;
+                    height: 95px;
+                    overflow: hidden;
+                    @media(max-width: 991px) {
+                        margin: 0;
+                        height: 80px;
+                    }
+                    h3 {
+                        font-size: 13px;
+                        line-height: 21px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: #064396;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        max-width: 200px;
+                        color: #666666;
+                        font-size: 13px;
+                        line-height: 21px;
+                        @media(max-width: 991px) {
+                            max-width: 100%;
+                        }
+                    }
+                }
+                &__social {
+                    h3 {
+                        font-size: 13px;
+                        line-height: 21px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: #064396;
+                        margin-bottom: 10px;
+                    }
+                    .social-icons {
+                        ul {
+                            li {
+                                display: inline-block;
+                                list-style: none;
+                                margin-right: 15px;
+                                a {
+                                    display: block;
+                                    background-color: #4267b2;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: #fff;
+                                    text-align: center;
+                                    width: 35px;
+                                    height: 35px;
+                                    border-radius: 3px;
+                                    transition: all 0.3s linear;
+                                    i {
+                                        line-height: 35px;
+                                    }
+                                    &:hover {
+                                        transform: translateY(-5px);
+                                    }
+                                }
+                            }
+                            .bg-youtube {
+                                a {
+                                    background-color: red;
+                                }
+                            }
+                        }
+                    }
+                }
+                &:nth-child(1) {
+                    .footer-logo {
+                        &__img {
+                            width: 150px;
+                            margin-bottom: 10px;
+                        }
+                        &__desc {
+                            width: 220px;
+                        }
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+    &-bottom {
+        padding: 20px 0;
+        background-color: #eff1f4;
+        color: #666666;
+        .wrap-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            span {
+                font-size: 13px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.fancybox-container {
+    z-index: 99999;
+}

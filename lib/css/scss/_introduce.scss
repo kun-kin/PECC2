@@ -1,0 +1,928 @@
+.wrapper {
+    .main-introduce {
+        max-width: 100%;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0%;
+            top: 0;
+            width: 320px;
+            height: 250px;
+            background: url('../../images/bgbanner.png') no-repeat;
+            background-position: left top;
+            z-index: 3;
+            @media(max-width: 991px) {
+                display: none;
+            }
+        }
+        .banner {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 200px;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+                z-index: 2;
+            }
+            &-img {
+                width: 100%;
+                height: 400px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .tab-menu {
+            max-width: 100%;
+            // background-color: red;
+            &__list {
+                display: flex;
+                justify-content: center;
+                background-color: #f6f6f6;
+                box-shadow: 0 3px 5px 0 rgb(0 0 0 / 10%);
+                ul {
+                    flex-wrap: nowrap;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    justify-content: flex-start;
+                    &:hover {
+                        overflow-x: auto;
+                        &::-webkit-scrollbar {
+                            // width: 3px;
+                            height: 5px;
+                        }
+                        &::-webkit-scrollbar-track {
+                            background: #ffffff;
+                        }
+                        &::-webkit-scrollbar-thumb {
+                            background: #24408f;
+                            border-radius: 24px;
+                        }
+                        &::-webkit-scrollbar-thumb:hover {
+                            background: #064396;
+                        }
+                    }
+                    li {
+                        &:not(:last-child) {
+                            border-right: 1px solid rgba(0, 0, 0, 0.1);
+                        }
+                        button {
+                            display: inline-block;
+                            padding: 12px 25px;
+                            text-transform: uppercase;
+                            background-color: #ffffff;
+                            font-weight: bold;
+                            border: none;
+                            border-top-left-radius: 0;
+                            border-top-right-radius: 0;
+                            color: #333333;
+                            &:hover {
+                                background-color: #064396;
+                                color: white;
+                            }
+                        }
+                        .nav-link.active {
+                            background-color: #064396;
+                            color: white;
+                        }
+                    }
+                }
+            }
+            .tab-content {
+                .tab-pane {
+                    .tab-menu__about {
+                        font-size: 35px;
+                        line-height: 45px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        text-align: center;
+                        margin: 30px 0 20px;
+                    }
+                }
+                #tab1 {
+                    .about-item1 {
+                        padding: 80px 0;
+                        min-height: 750px;
+                        background: url('../.././images/introduce/bg1.jpg') no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        .wrap-about {
+                            max-width: 1200px;
+                            padding: 0 15px;
+                            margin: 0 auto;
+                            p {
+                                max-width: 690px;
+                                color: #ffffff;
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+                        }
+                        @media(max-width:991px) {
+                            min-height: 600px;
+                            padding: 30px 0;
+                            .wrap-about {
+                                p {
+                                    font-size: 14px;
+                                    line-height: 22px;
+                                }
+                            }
+                        }
+                    }
+                    .about-item2 {
+                        padding: 60px 0;
+                        background: url('../.././images/introduce/bg2.png') no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        .wrap-about {
+                            max-width: 1200px;
+                            margin: 0 auto;
+                            display: flex;
+                            align-items: center;
+                            .col-left {
+                                width: 370px;
+                                padding: 0 30px;
+                                font-size: 16px;
+                                line-height: 24px;
+                                .col-title {
+                                    font-weight: bold;
+                                    margin-bottom: 10px;
+                                }
+                                .col-list {
+                                    ul {
+                                        margin-left: 20px;
+                                        li {
+                                            padding-left: 25px;
+                                            margin-bottom: 10px;
+                                            position: relative;
+                                            &::before {
+                                                font-family: fontAwesome;
+                                                position: absolute;
+                                                left: 0;
+                                                color: #cb0109;
+                                                content: "\f058";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .col-right {
+                                width: calc(100% - 370px);
+                                padding: 0 30px;
+                                .col-thumd {
+                                    width: 100%;
+                                    height: 100%;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+                            @media(max-width: 767px) {
+                                flex-direction: column;
+                                .col-left,
+                                .col-right {
+                                    width: 100%;
+                                    padding: 0 15px;
+                                }
+                                .col-left {
+                                    margin-bottom: 30px;
+                                }
+                            }
+                        }
+                        @media(max-width:767px) {
+                            padding: 30px 0;
+                        }
+                    }
+                    .about-item3 {
+                        background: url('../.././images/introduce/bg3.jpg') no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        min-height: 960px;
+                        .wrap-about {
+                            max-width: 1200px;
+                            margin: 0 auto;
+                            padding: 60px 0;
+                            .about-cont {
+                                max-width: 70%;
+                                margin: 0 auto;
+                                text-align: center;
+                                color: #ffffff;
+                                font-size: 16px;
+                                line-height: 24px;
+                                p {
+                                    padding: 5px 0;
+                                }
+                                @media(max-width:767px) {
+                                    max-width: 100%;
+                                    padding: 0 15px;
+                                    p {
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                    }
+                                }
+                            }
+                        }
+                        @media(max-width:767px) {
+                            min-height: 700px;
+                            .wrap-about {
+                                padding: 30px 0;
+                            }
+                        }
+                    }
+                }
+                /* #tab2 */
+                #tab2 {
+                    .tab-menu__about {
+                        font-size: 35px;
+                        line-height: 45px;
+                        font-weight: 400;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                    .tab-menu__cont {
+                        padding: 30px 0;
+                        background: url('../.././images/introduce/tdbg.png') no-repeat;
+                        background-position: bottom center;
+                        background-size: 100%;
+                        min-height: 830px;
+                        padding-bottom: 150px;
+                        .wrap-about {
+                            max-width: 1200px;
+                            margin: 0 auto;
+                            display: flex;
+                            .col-left {
+                                width: 42%;
+                                padding: 0 15px;
+                                .col-thumd {
+                                    width: 100%;
+                                    height: auto;
+                                    img {
+                                        width: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+                            }
+                            .col-right {
+                                width: 58%;
+                                padding: 0 15px;
+                                .informan {
+                                    padding: 15px 120px 15px 60px;
+                                    display: inline-block;
+                                    color: #ffffff;
+                                    margin-bottom: 20px;
+                                    position: relative;
+                                    left: -60px;
+                                    z-index: 1;
+                                    overflow: hidden;
+                                    &::after {
+                                        content: '';
+                                        background: rgb(36, 64, 143);
+                                        background: linear-gradient(270deg, rgba(36, 64, 143, 1) 0%, rgba(36, 64, 143, 0.93) 100%);
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 66px;
+                                        bottom: 0;
+                                        z-index: -1;
+                                        border-top-right-radius: 70px;
+                                        pointer-events: none;
+                                    }
+                                    &::before {
+                                        content: '';
+                                        background-color: rgba(36, 64, 143, 1);
+                                        position: absolute;
+                                        height: 400px;
+                                        width: 70px;
+                                        top: -200px;
+                                        right: 115px;
+                                        transform: rotate(140deg);
+                                        z-index: -1;
+                                        pointer-events: none;
+                                    }
+                                    &-name {
+                                        font-size: 18px;
+                                        line-height: 27px;
+                                        text-transform: uppercase;
+                                        font-weight: bold;
+                                        margin-bottom: 5px;
+                                    }
+                                    &-info {
+                                        font-size: 15px;
+                                        line-height: 23px;
+                                        font-style: italic;
+                                    }
+                                    @media(max-width:767px) {
+                                        left: 0;
+                                    }
+                                    @media(max-width:540px) {
+                                        padding: 15px 100px 15px 15px;
+                                    }
+                                }
+                                .list-cont {
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    p {
+                                        padding: 7px 0;
+                                    }
+                                    @media(max-width:767px) {
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                    }
+                                }
+                            }
+                            @media(max-width:767px) {
+                                flex-direction: column;
+                                .col-left,
+                                .col-right {
+                                    width: 100%;
+                                }
+                                .col-right {
+                                    margin-top: -30px;
+                                }
+                            }
+                        }
+                        @media(max-width:767px) {
+                            padding-bottom: 60px;
+                        }
+                    }
+                }
+                #tab3 {
+                    .tab-menu__cont {
+                        .visition-item {
+                            .wrap-visition {
+                                max-width: 1200px;
+                                margin: 0 auto;
+                                padding: 0 15px;
+                            }
+                            &:nth-child(1) {
+                                background: url('../.././images/introduce/tmbg.jpg') no-repeat;
+                                background-position: center;
+                                background-size: cover;
+                                padding: 190px 0;
+                                .visition-one {
+                                    display: inline-block;
+                                    padding: 12px 30px;
+                                    border: 5px solid #ffffff;
+                                    h2 {
+                                        font-size: 30px;
+                                        line-height: 45px;
+                                        text-transform: uppercase;
+                                        color: #ffffff;
+                                        font-weight: bold;
+                                    }
+                                    @media(max-width: 767px) {
+                                        padding: 9px 25px;
+                                        h2 {
+                                            font-size: 22px;
+                                            line-height: 32px;
+                                        }
+                                    }
+                                }
+                                .visition-two {
+                                    max-width: 475px;
+                                    width: 100%;
+                                    background-color: rgba(255, 255, 255, 0.8);
+                                    margin-left: 100px;
+                                    padding: 25px;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    @media(max-width: 767px) {
+                                        max-width: calc(100% - 40px);
+                                        margin-left: 40px;
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                        padding: 20px;
+                                    }
+                                }
+                                @media(max-width:991px) {
+                                    padding: 100px 0 80px;
+                                }
+                            }
+                            &:nth-child(2) {
+                                background: url('../.././images/introduce/tmbg1.jpg') no-repeat;
+                                background-position: center;
+                                background-size: cover;
+                                min-height: 600px;
+                                padding: 75px 0 90px;
+                                .wrap-visition {
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    .wrap-cont {
+                                        max-width: 765px;
+                                        .visition-title {
+                                            .title-one {
+                                                display: inline-block;
+                                                padding: 12px 30px;
+                                                border: 5px solid #ffffff;
+                                                h2 {
+                                                    font-size: 30px;
+                                                    line-height: 45px;
+                                                    text-transform: uppercase;
+                                                    color: #ffffff;
+                                                    font-weight: bold;
+                                                }
+                                                @media(max-width: 767px) {
+                                                    padding: 9px 25px;
+                                                    h2 {
+                                                        font-size: 22px;
+                                                        line-height: 32px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .visition-cont {
+                                            &__infor {
+                                                margin-left: 100px;
+                                                .visi-infor__item {
+                                                    padding: 20px 15px;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    .item-number {
+                                                        width: 50px;
+                                                        text-align: center;
+                                                        font-size: 30px;
+                                                        line-height: 30px;
+                                                        font-weight: bold;
+                                                    }
+                                                    .item-text {
+                                                        width: calc(100% - 50px);
+                                                        padding-left: 10px;
+                                                        font-size: 16px;
+                                                        line-height: 24px;
+                                                    }
+                                                    &:nth-child(odd) {
+                                                        margin-right: 60px;
+                                                        background-color: rgba(255, 255, 255, 0.8);
+                                                        @media(max-width: 767px) {
+                                                            margin-right: 20px;
+                                                        }
+                                                    }
+                                                    &:nth-child(even) {
+                                                        margin-left: 60px;
+                                                        background-color: rgba(36, 64, 143, 0.8);
+                                                        color: #ffffff;
+                                                        @media(max-width: 767px) {
+                                                            margin-left: 20px;
+                                                        }
+                                                    }
+                                                }
+                                                @media(max-width:767px) {
+                                                    margin-left: 20px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                @media(max-width:767px) {
+                                    padding: 40px 0 50px;
+                                }
+                            }
+                            &:nth-child(3) {
+                                padding: 80px 0;
+                                background: url('../.././images/introduce/tmbg2.jpg') no-repeat;
+                                background-position: center;
+                                background-size: cover;
+                                .wrap-visition {
+                                    max-width: 1200px;
+                                    margin: 0 auto;
+                                    padding: 0 15px;
+                                    .thumd-img {
+                                        max-width: 580px;
+                                        margin: 0 auto;
+                                        img {
+                                            width: 100%;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                /* tab4 */
+                #tab4 {
+                    .tab-menu__cont {
+                        .tab-menu__main {
+                            .nav-tab__history {
+                                background-color: #24408f;
+                                color: #ffffff;
+                                .wrap-history {
+                                    max-width: 1200px;
+                                    margin: 0 auto;
+                                    padding: 0 15px;
+                                    .nav {
+                                        justify-content: center;
+                                        margin-bottom: 0 !important;
+                                        li {
+                                            button {
+                                                padding: 12px 24px;
+                                                font-size: 15px;
+                                                line-height: 23px;
+                                                font-weight: 700;
+                                                color: #ffffff;
+                                                text-align: center;
+                                                cursor: pointer;
+                                                border-radius: 0%;
+                                            }
+                                        }
+                                        @media(max-width:540px) {
+                                            flex-wrap: nowrap;
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            justify-content: flex-start;
+                                            &:hover {
+                                                overflow-x: auto;
+                                                &::-webkit-scrollbar {
+                                                    height: 5px;
+                                                }
+                                                &::-webkit-scrollbar-track {
+                                                    background: #24408f;
+                                                }
+                                                &::-webkit-scrollbar-thumb {
+                                                    background: #ffffff;
+                                                    border-radius: 24px;
+                                                }
+                                                &::-webkit-scrollbar-thumb:hover {
+                                                    background: #ffffff;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .tab-content {
+                                .tab-pane {
+                                    padding: 160px 0 140px;
+                                    position: relative;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    z-index: 1;
+                                    color: #ffffff;
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        background-color: #000000;
+                                        opacity: 0.3;
+                                        pointer-events: none;
+                                        z-index: -1;
+                                    }
+                                    .wrap-history {
+                                        max-width: 1200px;
+                                        margin: 0 auto;
+                                        padding: 0 15px;
+                                        .wrap-his {
+                                            padding-left: 30px;
+                                            position: relative;
+                                            &::before {
+                                                content: '';
+                                                position: absolute;
+                                                border-left: 1px solid rgba(255, 255, 255, 0.1);
+                                                top: 10px;
+                                                left: 30px;
+                                                bottom: -250px;
+                                            }
+                                            .year-his {
+                                                margin-bottom: 30px;
+                                                position: relative;
+                                                padding-left: 40px;
+                                                font-size: 40px;
+                                                line-height: 40px;
+                                                font-weight: 700;
+                                                &::before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    left: -15px;
+                                                    top: 6px;
+                                                    width: 30px;
+                                                    height: 30px;
+                                                    border-radius: 100%;
+                                                    background-color: #ffffff;
+                                                }
+                                                &::after {
+                                                    content: '';
+                                                    position: absolute;
+                                                    width: 20px;
+                                                    height: 20px;
+                                                    border-radius: 100%;
+                                                    background-color: #24408f;
+                                                    left: -10px;
+                                                    top: 11px;
+                                                }
+                                                span {
+                                                    display: inline-block;
+                                                    padding-bottom: 2px;
+                                                    border-bottom: 3px solid #ffffff;
+                                                }
+                                            }
+                                            .infor-his {
+                                                padding-left: 40px;
+                                                .item-year {
+                                                    display: flex;
+                                                    flex-wrap: wrap;
+                                                    margin-bottom: 30px;
+                                                    position: relative;
+                                                    &::before {
+                                                        content: '';
+                                                        position: absolute;
+                                                        width: 10px;
+                                                        height: 10px;
+                                                        border-radius: 100%;
+                                                        background-color: #ffffff;
+                                                        left: -45px;
+                                                        top: 15px;
+                                                    }
+                                                    .year {
+                                                        width: 115px;
+                                                        font-size: 25px;
+                                                        line-height: 38px;
+                                                        font-weight: 700;
+                                                    }
+                                                    .text {
+                                                        width: calc(100% - 115px);
+                                                        font-size: 15px;
+                                                        line-height: 23px;
+                                                        max-width: 490px;
+                                                        padding: 5px 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                #history1 {
+                                    background: url('../.././images/introduce/hisbg1.jpg') no-repeat;
+                                    background-position: center;
+                                    background-size: cover;
+                                }
+                                #history2 {
+                                    background: url('../.././images/introduce/hisbg2.jpg') no-repeat;
+                                    background-position: center;
+                                    background-size: cover;
+                                }
+                                #history3 {
+                                    background: url('../.././images/introduce/tmbg.jpg') no-repeat;
+                                    background-position: center;
+                                    background-size: cover;
+                                }
+                                #history4 {
+                                    background: url('../.././images/introduce/TTTK_1920x933.jpg') no-repeat;
+                                    background-position: center;
+                                    background-size: cover;
+                                }
+                            }
+                        }
+                    }
+                }
+                /* tab 5 */
+                .tab-menu__cont {
+                    .humman-item {
+                        .wrap-humman {
+                            max-width: 1200px;
+                            margin: 0 auto;
+                            padding: 0 15px;
+                            .humman-text {
+                                text-align: center;
+                                p {
+                                    max-width: 980px;
+                                    margin: 0 auto;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    text-align: center;
+                                    @media(max-width: 767px) {
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(1) {
+                            .humman-desc {
+                                .wrap-humman {
+                                    .humman-text {
+                                        padding: 30px 30px 40px 30px;
+                                        background-color: rgba(246, 246, 246, 0.9);
+                                        position: relative;
+                                        margin-bottom: -60px;
+                                        @media(max-width: 991px) {
+                                            padding: 20px 15px;
+                                            margin-bottom: -30px;
+                                        }
+                                    }
+                                }
+                            }
+                            .humman-thumd {
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                        }
+                        &:nth-child(2) {
+                            padding-top: 60px;
+                            background-color: #f7f6f1;
+                            .humman-text {
+                                p {
+                                    margin-bottom: 30px;
+                                }
+                            }
+                            .humman-thumd {
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            @media(max-width:767px) {
+                                padding-top: 30px;
+                            }
+                        }
+                        &:nth-child(3) {
+                            background: url('../.././images/introduce/humman2.1.png') no-repeat;
+                            background-position: bottom center;
+                            background-size: 100%;
+                            padding: 70px 0 80px;
+                            .humman-three {
+                                display: flex;
+                                align-items: center;
+                                max-width: 990px;
+                                margin: 0 auto;
+                                .col-left {
+                                    width: calc(100% - 320px);
+                                    padding: 0 30px;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+                                .col-right {
+                                    width: 320px;
+                                    padding: 0 30px;
+                                    &__thumd {
+                                        margin-bottom: 40px;
+                                    }
+                                    &__desc {
+                                        ul {
+                                            margin-left: 20px;
+                                            li {
+                                                margin-bottom: 15px;
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                                align-items: center;
+                                                align-content: center;
+                                                font-size: 16px;
+                                                line-height: 24px;
+                                                .color {
+                                                    width: 20px;
+                                                    height: 20px;
+                                                    border-radius: 100%;
+                                                }
+                                                .text {
+                                                    width: calc(100% - 20px);
+                                                    padding-left: 10px;
+                                                }
+                                                &:nth-child(1) {
+                                                    .color {
+                                                        background-color: #e06666;
+                                                    }
+                                                }
+                                                &:nth-child(2) {
+                                                    .color {
+                                                        background-color: #93c47d;
+                                                    }
+                                                }
+                                                &:nth-child(3) {
+                                                    .color {
+                                                        background-color: #b4a7d6;
+                                                    }
+                                                }
+                                                &:nth-child(4) {
+                                                    .color {
+                                                        background-color: #ffd966;
+                                                    }
+                                                }
+                                                &:nth-child(5) {
+                                                    .color {
+                                                        background-color: #6d9eeb;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                @media(max-width:767px) {
+                                    flex-direction: column;
+                                    .col-left,
+                                    .col-right {
+                                        width: 100%;
+                                        padding: 0 15px;
+                                    }
+                                }
+                            }
+                            @media(max-width:767px) {
+                                padding: 40px 0 50px;
+                            }
+                        }
+                        &:nth-child(4) {
+                            padding-top: 60px;
+                            .humman-desc {
+                                .humman-text {
+                                    h3 {
+                                        font-size: 30px;
+                                        line-height: 45px;
+                                        text-transform: uppercase;
+                                        margin-bottom: 15px;
+                                    }
+                                }
+                            }
+                            .humman-thumd {
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            @media(max-width:767px) {
+                                padding-top: 30px;
+                            }
+                        }
+                    }
+                }
+                /* tab 6 */
+                #tab6 {
+                    .wrap-humman5 {
+                        max-width: 1000px;
+                        margin: 0 auto 60px;
+                        padding: 0 15px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                /* tab 7 */
+                #tab7 {
+                    .humman-desc {
+                        padding: 25px 0;
+                        background-color: #eff1f4;
+                        .wrap-humman {
+                            max-width: 1200px;
+                            margin: 0 auto;
+                            padding: 0 15px;
+                            .humman-text {
+                                text-align: center;
+                                p {
+                                    max-width: 980px;
+                                    margin: 0 auto;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    text-align: center;
+                                    @media(max-width: 767px) {
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .humman-slide7 {
+                        position: relative;
+                        height: 305px;
+                        background-color: #24408f;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            background-color: rgba(36, 64, 143, 0.8);
+                            width: 100%;
+                            height: 100%;
+                            pointer-events: none;
+                            z-index: 1;
+                        }
+                        .wrap-humman {
+                            max-width: 900px;
+                            margin: 0 auto;
+                            padding: 0 15px;
+                            background-color: orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
