@@ -1,0 +1,360 @@
+.main-news {
+    .wrap-about {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    h1,
+    h2 {
+        font-size: 35px;
+        line-height: 45px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .banner {
+        .wrap-banner {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 320px;
+                height: 250px;
+                background-image: url('../.././images/bgbanner.png');
+                background-position: left top;
+                background-repeat: no-repeat;
+                background-size: contain;
+                z-index: 3;
+                pointer-events: none;
+            }
+            .banner-img {
+                background: url('../.././images/news/banner_2.jpg') no-repeat;
+                background-position: center;
+                background-size: cover;
+                position: relative;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 220px;
+                    // background: rgb(0, 0, 0);
+                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+                    z-index: 2;
+                    pointer-events: none;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    /* tab menu */
+    .tab-menu__news {
+        position: relative;
+        z-index: 1;
+        background-color: #f6f6f6;
+        box-shadow: 0 3px 5px 0 rgb(0 0 0 / 10%);
+        .tab-list {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            ul {
+                overflow-x: auto;
+                display: flex;
+                flex-flow: row nowrap;
+                transition: all 0.3s linear;
+                position: relative;
+                z-index: 2;
+                white-space: nowrap;
+                li {
+                    &:not(:last-child) {
+                        border-right: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+                    a {
+                        display: inline-block;
+                        padding: 12px 25px;
+                        text-transform: uppercase;
+                        background-color: #ffffff;
+                        font-weight: bold;
+                        color: #064396;
+                        &:hover {
+                            background-color: #064396;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wrap-new__main {
+        padding: 30px 0 60px;
+        .wrap-about {
+            .news-title {
+                text-align: center;
+                margin-bottom: 20px;
+                animation: fadeInDown;
+                animation-duration: 1s;
+                animation-delay: 0.2s;
+            }
+            .news-inforpage {
+                .slide-inforpage {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 -15px;
+                    margin-bottom: 40px;
+                    .slide-left {
+                        width: calc(100% - 400px);
+                        padding: 0 15px;
+                        &__cont {
+                            animation: fadeIn;
+                            animation-duration: 1s;
+                            animation-delay: 0.4s;
+                            .thumd {
+                                margin-bottom: 20px;
+                                a {
+                                    display: block;
+                                    overflow: hidden;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                        transition: all 0.3s linear;
+                                    }
+                                    &:hover {
+                                        img {
+                                            transition: all 0.3s linear;
+                                            transform: scale(1.025);
+                                        }
+                                    }
+                                }
+                            }
+                            .desc {
+                                h3 {
+                                    font-size: 25px;
+                                    line-height: 37px;
+                                    font-weight: 400;
+                                    @media(max-width: 991px) {
+                                        font-size: 18px;
+                                        line-height: 27px;
+                                        margin-bottom: 35px;
+                                    }
+                                }
+                            }
+                        }
+                        @media(max-width:991px) {
+                            width: 100%;
+                        }
+                    }
+                    .slide-right {
+                        width: 400px;
+                        padding: 0 15px;
+                        animation: fadeInRight;
+                        animation-duration: 1s;
+                        animation-delay: 0.2s;
+                        .slick-dots {
+                            width: auto;
+                            li {
+                                margin: 0;
+                                button {
+                                    width: 10px;
+                                    height: 10px;
+                                    &::before {
+                                        font-size: 12px;
+                                    }
+                                    &:hover {
+                                        &::before {
+                                            opacity: 1;
+                                            color: #064396;
+                                        }
+                                    }
+                                }
+                            }
+                            li.slick-active {
+                                button {
+                                    &::before {
+                                        opacity: 1;
+                                        color: #064396;
+                                    }
+                                }
+                            }
+                        }
+                        .news-about {
+                            &__item {
+                                .item-content {
+                                    .thumd {
+                                        max-height: 245px;
+                                        height: 100%;
+                                        margin-bottom: 15px;
+                                        img {
+                                            width: 100%;
+                                            object-fit: cover;
+                                            transition: all 0.3s linear;
+                                        }
+                                        &:hover {
+                                            img {
+                                                transform: scale(1.025);
+                                                transition: all 0.3s linear;
+                                            }
+                                        }
+                                        @media(max-width:991px) {
+                                            width: 50%;
+                                        }
+                                    }
+                                    .desc {
+                                        .time {
+                                            color: #064396;
+                                            font-size: 13px;
+                                            line-height: 21px;
+                                            margin-bottom: 10px;
+                                        }
+                                        .title {
+                                            margin-bottom: 10px;
+                                            h3 {
+                                                font-size: 18px;
+                                                line-height: 27px;
+                                                font-weight: bold;
+                                                text-transform: uppercase;
+                                                a {
+                                                    color: black;
+                                                }
+                                                @media(max-width:991px) {
+                                                    font-size: 13px;
+                                                    line-height: 21px;
+                                                }
+                                            }
+                                        }
+                                        .text {
+                                            color: #666666;
+                                            margin-bottom: 20px;
+                                            @media(max-width: 991px) {
+                                                font-size: 13px;
+                                                line-height: 21px;
+                                            }
+                                            @media(max-width:767px) {
+                                                display: none;
+                                            }
+                                        }
+                                        @media(max-width:991px) {
+                                            width: 50%;
+                                            padding-left: 15px;
+                                        }
+                                    }
+                                    @media(max-width:991px) {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                    }
+                                }
+                            }
+                        }
+                        @media(max-width:991px) {
+                            width: 100%;
+                        }
+                    }
+                    @media(max-width:991px) {
+                        flex-direction: column;
+                    }
+                }
+                .list-inforpage {
+                    .ls-news {
+                        &__item {
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin: 0 -15px;
+                            margin-bottom: 30px;
+                            animation: fadeInUp;
+                            animation-duration: 1s;
+                            animation-delay: 0.2s;
+                            .ls-new__left {
+                                width: 400px;
+                                padding: 0 15px;
+                                .thumd {
+                                    a {
+                                        display: block;
+                                        overflow: hidden;
+                                        max-height: 247px;
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                            transition: all 0.3s linear;
+                                        }
+                                        &:hover {
+                                            img {
+                                                transform: scale(1.025);
+                                                transition: all 0.3s linear;
+                                            }
+                                        }
+                                        @media(max-width:767px) {
+                                            max-height: 370px;
+                                        }
+                                    }
+                                }
+                                @media(max-width:767px) {
+                                    width: 100%;
+                                }
+                            }
+                            .ls-new__right {
+                                width: calc(100% - 400px);
+                                padding: 0 15px;
+                                .desc {
+                                    padding: 20px 0;
+                                    border-top: 1px solid rgba(0, 0, 0, 0.1);
+                                    .time {
+                                        color: #064396;
+                                        font-size: 13px;
+                                        line-height: 21px;
+                                        margin-bottom: 10px;
+                                    }
+                                    .title {
+                                        margin-bottom: 10px;
+                                        h3 {
+                                            font-size: 18px;
+                                            line-height: 27px;
+                                            font-weight: bold;
+                                            a {
+                                                color: black;
+                                            }
+                                        }
+                                    }
+                                    .text {
+                                        color: #666666;
+                                        margin-bottom: 20px;
+                                    }
+                                    .viewall {
+                                        a {
+                                            display: inline-block;
+                                            padding: 5px 20px;
+                                            background-color: #24408f;
+                                            border: 1px solid #24408f;
+                                            border-radius: 3px;
+                                            color: #ffffff;
+                                            text-transform: uppercase;
+                                            text-align: center;
+                                            transition: all 0.3s linear;
+                                            &:hover {
+                                                background-color: transparent;
+                                                color: #064396;
+                                                transition: all 0.3s linear;
+                                            }
+                                        }
+                                    }
+                                }
+                                @media(max-width:767px) {
+                                    width: 100%;
+                                }
+                            }
+                            @media(max-width:767px) {
+                                flex-direction: column;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

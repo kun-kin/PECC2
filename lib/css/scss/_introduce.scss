@@ -625,6 +625,11 @@
                                                     padding-bottom: 2px;
                                                     border-bottom: 3px solid #ffffff;
                                                 }
+                                                @media(max-width:767px) {
+                                                    font-size: 25px;
+                                                    line-height: 37px;
+                                                    padding-left: 30px;
+                                                }
                                             }
                                             .infor-his {
                                                 padding-left: 40px;
@@ -648,6 +653,11 @@
                                                         font-size: 25px;
                                                         line-height: 38px;
                                                         font-weight: 700;
+                                                        @media(max-width: 767px) {
+                                                            font-size: 20px;
+                                                            line-height: 30px;
+                                                            width: 100%;
+                                                        }
                                                     }
                                                     .text {
                                                         width: calc(100% - 115px);
@@ -655,10 +665,21 @@
                                                         line-height: 23px;
                                                         max-width: 490px;
                                                         padding: 5px 0;
+                                                        @media(max-width: 767px) {
+                                                            font-size: 14px;
+                                                            line-height: 22px;
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                    @media(max-width:991px) {
+                                                        flex-direction: column;
                                                     }
                                                 }
                                             }
                                         }
+                                    }
+                                    @media(max-width:991px) {
+                                        padding: 50px 0;
                                     }
                                 }
                                 #history1 {
@@ -901,11 +922,11 @@
                     }
                     .humman-slide7 {
                         position: relative;
-                        height: 305px;
+                        // height: 305px;
                         background-color: #24408f;
                         &::before {
                             content: '';
-                            position: absolute;
+                            // position: absolute;
                             top: 0px;
                             left: 0px;
                             background-color: rgba(36, 64, 143, 0.8);
@@ -914,11 +935,44 @@
                             pointer-events: none;
                             z-index: 1;
                         }
-                        .wrap-humman {
-                            max-width: 900px;
+                        .wrap {
+                            text-align: center;
+                            margin: 0 auto;
+                            position: relative;
+                            .main {
+                                max-width: 1200px;
+                                margin: 0 auto;
+                                .your-class {
+                                    padding: 0;
+                                    position: relative;
+                                    overflow: hidden;
+                                    display: block;
+                                    margin: 0 auto;
+                                    height: 305px !important;
+                                    .class {
+                                        top: 40px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .humman-contitle {
+                        padding: 60px 0 40px;
+                        background-color: #eff1f4;
+                        .wrap-about {
+                            max-width: 1200px;
                             margin: 0 auto;
                             padding: 0 15px;
-                            background-color: orange;
+                            .text {
+                                text-align: center;
+                                font-size: 150px;
+                                line-height: 150px;
+                                font-weight: 900;
+                                -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+                                color: transparent;
+                                white-space: nowrap;
+                                text-transform: uppercase;
+                            }
                         }
                     }
                 }

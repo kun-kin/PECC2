@@ -6,11 +6,595 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dự án</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="./lib/css/style.css">
 </head>
 
 <body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-logo">
+                    <h1>
+                        <a href="#">
+                            <img src="./images/logo.svg" alt="">
+                        </a>
+                    </h1>
+                </div>
+                <div class="header-menu_right">
+                    <nav class="nav">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="./index.html" class="menu-link">trang chủ</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./introduce.html" class="menu-link">giới thiệu</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./activity.html" class="menu-link">lĩnh vực hoạt động</a>
+                                <div class="submenu">
+                                    <div class="wrap-submenu">
+                                        <div class="submenu-item">
+                                            <h3 class="submenu-title">
+                                                <a href="#">
+                                                    tư vấn xây dựng điện
+                                                </a>
 
+                                            </h3>
+                                            <div class="submenu-cont">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://www.youtube.com/">Khảo sát</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Thủy điện & năng lượng tái tạo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Nhiệt điện và điện hạt nhân</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Lưới điện</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Đào tạo,nghiên cứu và phát triển</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Trung tâm năng lượng số</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="submenu-item">
+                                            <h3 class="submenu-title">
+                                                <a href="#">
+                                                    kinh doanh
+                                                </a>
+
+                                            </h3>
+                                            <div class="submenu-cont">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Tổng thầu EFC</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Chế tạo cơ khí</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Quản lí và vận hành nhà máy điện</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="submenu-item">
+                                            <h3 class="submenu-title">
+                                                <a href="">
+                                                    đầu tư
+                                                </a>
+
+                                            </h3>
+                                            <div class="submenu-cont">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Đầu tư</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item active">
+                                <a href="./project.html" class="menu-link">dự án</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">quan hệ đầu tư</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./news.html" class="menu-link">tin tức</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./contact.html" class="menu-link">liên hệ</a>
+                                <div class="submenu">
+                                    <div class="wrap-submenu">
+                                        <div class="submenu-item">
+                                            <h3 class="submenu-title">
+                                                <a href="#">
+                                                    tư vấn báo giá
+                                                </a>
+
+                                            </h3>
+                                            <div class="submenu-cont"></div>
+                                        </div>
+                                        <div class="submenu-item">
+                                            <h3 class="submenu-title">
+                                                <a href="./contact.html">
+                                                    liên hệ
+                                                </a>
+
+                                            </h3>
+                                            <div class="submenu-cont"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-search">
+                        <div class="header-search__icons">
+                            <span class="icons-search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span class="icons-close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                        </div>
+                        <div class="search-popup">
+                            <div class="search-popup__content">
+                                <form action="#" class="form-search">
+                                    <input type="text" name="search-name" id="" class="search-name" placeholder="Tìm kiếm">
+                                    <button class="search-btn">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-language">
+                        <div class="language-icons">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>VN</span>
+                        </div>
+                        <div class="language-popup">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/change_langu-vn.svg" alt="">
+                                        <span>Tiếng Việt</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/change_langu-en.svg" alt="">
+                                        <span>English</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu-toggle">
+                        <span class="style-icons"></span>
+                        <span class="style-icons"></span>
+                        <span class="style-icons"></span>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main-project">
+            <section class="banner">
+                <div class="wrap-banner">
+                    <div class="banner-img">
+                        <img src="./images/project/banner_3.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="tab-menu__project">
+                <div class="list-tab">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Nhiệt điện & điện hạt nhân
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                lưới điện
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                thủy điện & năng lượng tái tạo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                khảo sát
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                cơ điện
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                epc
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                quản lí và vận hành nhà máy điện
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <div class="wrap-cont__project">
+                <div class="project-cont">
+                    <div class="pro-title">
+                        <div class="wrap-about">
+                            <h1>dự án</h1>
+                        </div>
+                    </div>
+                    <div class="pro-cont">
+                        <div class="grid-project">
+                            <input type='hidden' id='current_page' />
+                            <input type='hidden' id='show_per_page' />
+                            <div class="grid-item">
+                                <div class="grid-item__thumd">
+                                    <a href="#">
+                                        <img src="./images/project/740_crop_Turbin_gio_Dien_Gio_Tan_Thuan.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="grid-item__desc">
+                                    <h3>
+                                        <a href="#">
+                                            nhà máy điện gió tân thuận
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item__thumd">
+                                    <a href="#">
+                                        <img src="./images/project/740_crop_Thuy_dien_Buon_Kuop.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="grid-item__desc">
+                                    <h3>
+                                        <a href="#">
+                                            thủy điện buôn kuop
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item__thumd">
+                                    <a href="#">
+                                        <img src="./images/project/740_crop_NM_DMT_Vinh_Tan_4_Compress.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="grid-item__desc">
+                                    <h3>
+                                        <a href="#">
+                                            nhà máy nhiệt điện vĩnh tân 4
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item__thumd">
+                                    <a href="#">
+                                        <img src="./images/project/740_crop_img1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="grid-item__desc">
+                                    <h3>
+                                        <a href="#">
+                                            nhà máy điện mặt trời mĩ sơn
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item__thumd">
+                                    <a href="#">
+                                        <img src="./images/project/740_crop_Duong_ong_ap_luc_TD_Dai_Ninh.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="grid-item__desc">
+                                    <h3>
+                                        <a href="#">
+                                            nhà máy thủy điện đại ninh
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-item__thumd">
+                                    <a href="#">
+                                        <img src="./images/project/740_crop_7_Dap_tran_Thuy_dien_Dak_Mi_4B.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="grid-item__desc">
+                                    <h3>
+                                        <a href="#">
+                                            thủy điện đăk mi 3,đăk mi 4
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="page-pagination" class="pagination">
+                            <div class='pagination-container'>
+                                <nav>
+                                    <ul class="pagination">
+
+                                        <li data-page="prev">
+                                            <span> < <span class="sr-only">(current)</span></span>
+                                        </li>
+                                        <!--	Here the JS Function Will Add the Rows -->
+                                        <li data-page="next" id="prev">
+                                            <span> > <span class="sr-only">(current)</span></span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="wrap-footer">
+                    <div class=" footer-item">
+                        <div class="footer-logo">
+                            <div class="footer-logo__img">
+                                <a href="#">
+                                    <img src="./images/logo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="footer-logo__desc">
+                                <img src="./images/footer_caption.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=" footer-item">
+                        <div class="footer-item__cont">
+                            <h3>trụ sở chính</h3>
+                            <p>32 Ngô Thời Nhiệm, Phường Võ Thị Sáu, Quận 3, Tp. HCM, Việt Nam</p>
+                        </div>
+                        <div class="footer-item__cont">
+                            <h3>PECC2 INNOVATION HUB</h3>
+                            <p>45 Đường Số 2, Phường Trường Thọ, Tp.Thủ Đức, Tp. HCM, Việt Nam</p>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-item__cont">
+                            <h3>XÍ NGHIỆP KHẢO SÁT (XNKSTHMN)</h3>
+                            <p>45 Dân Chủ, P.Bình Thọ, Tp.Thủ Đức,Tp.HCM</p>
+                        </div>
+                        <div class="footer-item__cont">
+                            <h3>XÍ NGHIỆP CƠ ĐIỆN</h3>
+                            <p>Đường số 6, KCN Long Khánh, Xã Bình Lộc, TP. Long Khánh, Đồng Nai</p>
+                        </div>
+                    </div>
+                    <div class=" footer-item">
+                        <div class="footer-item__social">
+                            <h3>pecc2 trên</h3>
+                            <div class="social-icons">
+                                <ul>
+                                    <li class="bg-facebook">
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="bg-youtube">
+                                        <a href="#">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li class="bg-instagram">
+                                        <a href="#">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="wrap-bottom">
+                    <span>Copyright © 2017 -2020 <strong> Công ty Cổ phần Tư vấn Xây dựng Điện 2</strong></span>
+                </div>
+            </div>
+        </footer>
+        <a id="backtotop"></a>
+        <div class="menu-mobile">
+            <div class="wrap-mobile">
+                <span class="close-menu-mobile"><i class="fa-solid fa-xmark"></i></span>
+                <div class="mobile-title">
+                    <h2>pecc2</h2>
+                </div>
+                <div class="mobile-list">
+                    <ul>
+                        <li>
+                            <a href="./index.html">trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="./introduce.html">giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="./activity.html">lĩnh vực hoạt động</a>
+                            <div class="btn-submenu">
+                            </div>
+                            <div class="submenu-mobile2">
+                                <div class="submenu-mobile2__title back-menu">
+
+                                </div>
+                                <div class="submenu-mobile2__item">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Tư vấn xây dựng điện</a>
+                                            <div class="btn-submenu">
+                                            </div>
+                                            <div class="submenu-mobile3">
+                                                <div class="submenu-mobile3__title back-menu">
+                                                </div>
+                                                <div class="submenu-mobile3__item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Khảo sát</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Thủy điện và năng lượng tái tạo</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Nhiệt điện và điện hạt nhân</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Lưới điện</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Đào tạo,Nghiên cứu và phát triển</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Trung tâm năng lực số</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kinh doanh</a>
+                                            <div class="btn-submenu">
+                                            </div>
+                                            <div class="submenu-mobile3">
+                                                <div class="submenu-mobile3__title back-menu">
+                                                </div>
+                                                <div class="submenu-mobile3__item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Tổng thầu EPC</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Chế tạo cơ khí</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Quản lí và vận hành nhà máy điện</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <a href="#">Đầu tư</a>
+                                            <div class="btn-submenu">
+                                            </div>
+                                            <div class="submenu-mobile3">
+                                                <div class="submenu-mobile3__title back-menu">
+                                                </div>
+                                                <div class="submenu-mobile3__item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Đầu tư</a>
+                                                        </li>
+
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./project.html">dự án</a>
+                        </li>
+                        <li>
+                            <a href="#">quan hệ đầu tư</a>
+                        </li>
+                        <li>
+                            <a href="./news.html">tin tức</a>
+                        </li>
+                        <li>
+                            <a href="#">liên hệ</a>
+                            <div class="btn-submenu">
+                            </div>
+                            <div class="submenu-mobile2">
+                                <div class="submenu-mobile2__title back-menu">
+                                </div>
+                                <div class="submenu-mobile2__item">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Tư vấn báo giá</a>
+                                        </li>
+                                        <li>
+                                            <a href="./contact.html">Liên hệ</a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-search">
+                    <form action="#" class="form-search">
+                        <input type="text" name="search-name" id="" class="search-name" placeholder="Tìm kiếm">
+                        <button class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="./lib/js/style.js"></script>
 </body>
 
 </html>
