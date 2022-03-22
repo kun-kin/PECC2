@@ -52,6 +52,9 @@
             .title {
                 margin-bottom: 20px;
                 text-align: center;
+                animation: fadeInDown;
+                animation-duration: 1s;
+                animation-delay: 0.2s;
                 h1 {
                     font-size: 35px;
                     line-height: 45px;
@@ -72,6 +75,9 @@
             display: flex;
             flex-wrap: wrap;
             background-color: #eff1f4;
+            animation: fadeInUp;
+            animation-duration: 1s;
+            animation-delay: 0.2s;
             .col-thumd {
                 width: calc(100% - 465px);
                 .thumd {
@@ -154,6 +160,9 @@
                         }
                     }
                 }
+                @media(max-width:991px) {
+                    width: 100%;
+                }
             }
             .col-desc {
                 width: 330px;
@@ -200,6 +209,15 @@
                             }
                         }
                     }
+                    @media(max-width:991px) {
+                        width: calc(100% - 30px);
+                        position: relative;
+                        margin-left: 15px;
+                        margin-top: -20px;
+                    }
+                }
+                @media(max-width:991px) {
+                    width: 100%;
                 }
             }
             .col-img {
@@ -223,7 +241,18 @@
                         color: transparent;
                         white-space: nowrap;
                         text-transform: uppercase;
+                        @media(max-width: 991px) {
+                            font-size: 50px;
+                            line-height: 65px;
+                            padding: 15px;
+                            position: static;
+                            transform: inherit;
+                            text-align: center;
+                        }
                     }
+                }
+                @media(max-width:991px) {
+                    width: 100%;
                 }
             }
             &:nth-child(odd) {
@@ -234,6 +263,24 @@
             &:nth-child(even) {
                 .desc-center {
                     margin-right: -75px;
+                }
+            }
+            @media(max-width:991px) {
+                &:nth-child(odd) {
+                    .desc-center {
+                        margin-left: 0;
+                    }
+                }
+                &:nth-child(even) {
+                    .col-img {
+                        order: 3;
+                    }
+                    .col-desc {
+                        order: 2;
+                    }
+                    .desc-center {
+                        margin-right: 0;
+                    }
                 }
             }
         }

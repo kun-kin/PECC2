@@ -106,6 +106,11 @@
                     }
                 }
                 #tab1 {
+                    .tab-menu__about {
+                        animation: fadeInDown;
+                        animation-duration: 1s;
+                        animation-delay: 0.2s;
+                    }
                     .about-item1 {
                         padding: 80px 0;
                         min-height: 750px;
@@ -116,6 +121,9 @@
                             max-width: 1200px;
                             padding: 0 15px;
                             margin: 0 auto;
+                            animation: fadeInUp;
+                            animation-duration: 1s;
+                            animation-delay: 0.2s;
                             p {
                                 max-width: 690px;
                                 color: #ffffff;
@@ -152,8 +160,14 @@
                                 .col-title {
                                     font-weight: bold;
                                     margin-bottom: 10px;
+                                    animation: fadeInUp;
+                                    animation-duration: 1s;
+                                    animation-delay: 0.2s;
                                 }
                                 .col-list {
+                                    animation: fadeInUp;
+                                    animation-duration: 1s;
+                                    animation-delay: 0.3s;
                                     ul {
                                         margin-left: 20px;
                                         li {
@@ -170,10 +184,18 @@
                                         }
                                     }
                                 }
+                                .col-cont {
+                                    animation: fadeInUp;
+                                    animation-duration: 1s;
+                                    animation-delay: 0.4s;
+                                }
                             }
                             .col-right {
                                 width: calc(100% - 370px);
                                 padding: 0 30px;
+                                animation: fadeInRight;
+                                animation-duration: 1s;
+                                animation-delay: 0.3s;
                                 .col-thumd {
                                     width: 100%;
                                     height: 100%;
@@ -218,6 +240,9 @@
                                 line-height: 24px;
                                 p {
                                     padding: 5px 0;
+                                    animation: fadeInUp;
+                                    animation-duration: 1s;
+                                    animation-delay: 0.2s;
                                 }
                                 @media(max-width:767px) {
                                     max-width: 100%;
@@ -245,6 +270,9 @@
                         font-weight: 400;
                         text-align: center;
                         text-transform: uppercase;
+                        animation: fadeInDown;
+                        animation-duration: 1s;
+                        animation-delay: 0.2s;
                     }
                     .tab-menu__cont {
                         padding: 30px 0;
@@ -263,6 +291,9 @@
                                 .col-thumd {
                                     width: 100%;
                                     height: auto;
+                                    animation: fadeInLeft;
+                                    animation-duration: 1s;
+                                    animation-delay: 0.3s;
                                     img {
                                         width: 100%;
                                         object-fit: cover;
@@ -281,6 +312,9 @@
                                     left: -60px;
                                     z-index: 1;
                                     overflow: hidden;
+                                    animation: fadeInUp;
+                                    animation-duration: 1s;
+                                    animation-delay: 0.2s;
                                     &::after {
                                         content: '';
                                         background: rgb(36, 64, 143);
@@ -328,6 +362,9 @@
                                 .list-cont {
                                     font-size: 16px;
                                     line-height: 24px;
+                                    animation: fadeInUp;
+                                    animation-duration: 1s;
+                                    animation-delay: 0.2s;
                                     p {
                                         padding: 7px 0;
                                     }
@@ -354,6 +391,11 @@
                     }
                 }
                 #tab3 {
+                    .tab-menu__about {
+                        animation: fadeInDown;
+                        animation-duration: 1s;
+                        animation-delay: 0.2s;
+                    }
                     .tab-menu__cont {
                         .visition-item {
                             .wrap-visition {
@@ -370,6 +412,9 @@
                                     display: inline-block;
                                     padding: 12px 30px;
                                     border: 5px solid #ffffff;
+                                    animation: fadeInRight;
+                                    animation-duration: 1s;
+                                    animation-delay: 0.3s;
                                     h2 {
                                         font-size: 30px;
                                         line-height: 45px;
@@ -393,6 +438,9 @@
                                     padding: 25px;
                                     font-size: 16px;
                                     line-height: 24px;
+                                    animation: fadeInUp;
+                                    animation-duration: 1s;
+                                    animation-delay: 0.2s;
                                     @media(max-width: 767px) {
                                         max-width: calc(100% - 40px);
                                         margin-left: 40px;
@@ -421,6 +469,9 @@
                                                 display: inline-block;
                                                 padding: 12px 30px;
                                                 border: 5px solid #ffffff;
+                                                animation: fadeInRight;
+                                                animation-duration: 1s;
+                                                animation-delay: 0.3s;
                                                 h2 {
                                                     font-size: 30px;
                                                     line-height: 45px;
@@ -444,6 +495,9 @@
                                                     padding: 20px 15px;
                                                     display: flex;
                                                     align-items: center;
+                                                    animation: fadeInUp;
+                                                    animation-duration: 1s;
+                                                    animation-delay: 0.2s;
                                                     .item-number {
                                                         width: 50px;
                                                         text-align: center;
@@ -496,6 +550,9 @@
                                     .thumd-img {
                                         max-width: 580px;
                                         margin: 0 auto;
+                                        animation: fadeIn;
+                                        animation-duration: 1s;
+                                        animation-delay: 0.2s;
                                         img {
                                             width: 100%;
                                             object-fit: cover;
@@ -508,11 +565,19 @@
                 }
                 /* tab4 */
                 #tab4 {
+                    .tab-menu__about {
+                        animation: fadeInDown;
+                        animation-duration: 1s;
+                        animation-delay: 0.3s;
+                    }
                     .tab-menu__cont {
                         .tab-menu__main {
                             .nav-tab__history {
                                 background-color: #24408f;
                                 color: #ffffff;
+                                animation: fadeInUp;
+                                animation-duration: 1s;
+                                animation-delay: 0.2s;
                                 .wrap-history {
                                     max-width: 1200px;
                                     margin: 0 auto;
@@ -558,6 +623,9 @@
                                 }
                             }
                             .tab-content {
+                                animation: fadeIn;
+                                animation-duration: 1s;
+                                animation-delay: 0.4s;
                                 .tab-pane {
                                     padding: 160px 0 140px;
                                     position: relative;
@@ -707,191 +775,234 @@
                     }
                 }
                 /* tab 5 */
-                .tab-menu__cont {
-                    .humman-item {
-                        .wrap-humman {
-                            max-width: 1200px;
-                            margin: 0 auto;
-                            padding: 0 15px;
-                            .humman-text {
-                                text-align: center;
-                                p {
-                                    max-width: 980px;
-                                    margin: 0 auto;
-                                    font-size: 16px;
-                                    line-height: 24px;
+                #tab5 {
+                    .tab-menu__about {
+                        animation: fadeInDown;
+                        animation-duration: 1s;
+                        animation-delay: 0.3s;
+                    }
+                    .tab-menu__cont {
+                        .humman-item {
+                            .wrap-humman {
+                                max-width: 1200px;
+                                margin: 0 auto;
+                                padding: 0 15px;
+                                .humman-text {
                                     text-align: center;
-                                    @media(max-width: 767px) {
-                                        font-size: 14px;
-                                        line-height: 22px;
-                                    }
-                                }
-                            }
-                        }
-                        &:nth-child(1) {
-                            .humman-desc {
-                                .wrap-humman {
-                                    .humman-text {
-                                        padding: 30px 30px 40px 30px;
-                                        background-color: rgba(246, 246, 246, 0.9);
-                                        position: relative;
-                                        margin-bottom: -60px;
-                                        @media(max-width: 991px) {
-                                            padding: 20px 15px;
-                                            margin-bottom: -30px;
+                                    p {
+                                        max-width: 980px;
+                                        margin: 0 auto;
+                                        font-size: 16px;
+                                        line-height: 24px;
+                                        text-align: center;
+                                        @media(max-width: 767px) {
+                                            font-size: 14px;
+                                            line-height: 22px;
                                         }
                                     }
                                 }
                             }
-                            .humman-thumd {
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: cover;
+                            &:nth-child(1) {
+                                .humman-desc {
+                                    animation: fadeInUp;
+                                    animation-duration: 1s;
+                                    animation-delay: 0.3s;
+                                    .wrap-humman {
+                                        .humman-text {
+                                            padding: 30px 30px 40px 30px;
+                                            background-color: rgba(246, 246, 246, 0.9);
+                                            position: relative;
+                                            margin-bottom: -60px;
+                                            @media(max-width: 991px) {
+                                                padding: 20px 15px;
+                                                margin-bottom: -30px;
+                                            }
+                                        }
+                                    }
                                 }
-                            }
-                        }
-                        &:nth-child(2) {
-                            padding-top: 60px;
-                            background-color: #f7f6f1;
-                            .humman-text {
-                                p {
-                                    margin-bottom: 30px;
-                                }
-                            }
-                            .humman-thumd {
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: cover;
-                                }
-                            }
-                            @media(max-width:767px) {
-                                padding-top: 30px;
-                            }
-                        }
-                        &:nth-child(3) {
-                            background: url('../.././images/introduce/humman2.1.png') no-repeat;
-                            background-position: bottom center;
-                            background-size: 100%;
-                            padding: 70px 0 80px;
-                            .humman-three {
-                                display: flex;
-                                align-items: center;
-                                max-width: 990px;
-                                margin: 0 auto;
-                                .col-left {
-                                    width: calc(100% - 320px);
-                                    padding: 0 30px;
+                                .humman-thumd {
+                                    animation: fadeIn;
+                                    animation-duration: 1s;
+                                    animation-delay: 0.4s;
                                     img {
                                         width: 100%;
                                         height: 100%;
                                         object-fit: cover;
                                     }
                                 }
-                                .col-right {
-                                    width: 320px;
-                                    padding: 0 30px;
-                                    &__thumd {
-                                        margin-bottom: 40px;
+                            }
+                            &:nth-child(2) {
+                                padding-top: 60px;
+                                background-color: #f7f6f1;
+                                .humman-desc {
+                                    animation: fadeInUp;
+                                    animation-duration: 1s;
+                                    animation-delay: 0.3s;
+                                    .humman-text {
+                                        p {
+                                            margin-bottom: 30px;
+                                        }
                                     }
-                                    &__desc {
-                                        ul {
-                                            margin-left: 20px;
-                                            li {
-                                                margin-bottom: 15px;
-                                                display: flex;
-                                                flex-wrap: wrap;
-                                                align-items: center;
-                                                align-content: center;
-                                                font-size: 16px;
-                                                line-height: 24px;
-                                                .color {
-                                                    width: 20px;
-                                                    height: 20px;
-                                                    border-radius: 100%;
-                                                }
-                                                .text {
-                                                    width: calc(100% - 20px);
-                                                    padding-left: 10px;
-                                                }
-                                                &:nth-child(1) {
+                                }
+                                .humman-thumd {
+                                    animation: fadeIn;
+                                    animation-duration: 1s;
+                                    animation-delay: 0.4s;
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        object-fit: cover;
+                                    }
+                                }
+                                @media(max-width:767px) {
+                                    padding-top: 30px;
+                                }
+                            }
+                            &:nth-child(3) {
+                                background: url('../.././images/introduce/humman2.1.png') no-repeat;
+                                background-position: bottom center;
+                                background-size: 100%;
+                                padding: 70px 0 80px;
+                                .humman-three {
+                                    display: flex;
+                                    align-items: center;
+                                    max-width: 990px;
+                                    margin: 0 auto;
+                                    .col-left {
+                                        width: calc(100% - 320px);
+                                        padding: 0 30px;
+                                        animation: fadeInLeft;
+                                        animation-duration: 1s;
+                                        animation-delay: 0.3s;
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                            object-fit: cover;
+                                        }
+                                    }
+                                    .col-right {
+                                        width: 320px;
+                                        padding: 0 30px;
+                                        animation: fadeInRight;
+                                        animation-duration: 1s;
+                                        animation-delay: 0.3s;
+                                        &__thumd {
+                                            margin-bottom: 40px;
+                                        }
+                                        &__desc {
+                                            ul {
+                                                margin-left: 20px;
+                                                li {
+                                                    margin-bottom: 15px;
+                                                    display: flex;
+                                                    flex-wrap: wrap;
+                                                    align-items: center;
+                                                    align-content: center;
+                                                    font-size: 16px;
+                                                    line-height: 24px;
                                                     .color {
-                                                        background-color: #e06666;
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        border-radius: 100%;
                                                     }
-                                                }
-                                                &:nth-child(2) {
-                                                    .color {
-                                                        background-color: #93c47d;
+                                                    .text {
+                                                        width: calc(100% - 20px);
+                                                        padding-left: 10px;
                                                     }
-                                                }
-                                                &:nth-child(3) {
-                                                    .color {
-                                                        background-color: #b4a7d6;
+                                                    &:nth-child(1) {
+                                                        .color {
+                                                            background-color: #e06666;
+                                                        }
                                                     }
-                                                }
-                                                &:nth-child(4) {
-                                                    .color {
-                                                        background-color: #ffd966;
+                                                    &:nth-child(2) {
+                                                        .color {
+                                                            background-color: #93c47d;
+                                                        }
                                                     }
-                                                }
-                                                &:nth-child(5) {
-                                                    .color {
-                                                        background-color: #6d9eeb;
+                                                    &:nth-child(3) {
+                                                        .color {
+                                                            background-color: #b4a7d6;
+                                                        }
+                                                    }
+                                                    &:nth-child(4) {
+                                                        .color {
+                                                            background-color: #ffd966;
+                                                        }
+                                                    }
+                                                    &:nth-child(5) {
+                                                        .color {
+                                                            background-color: #6d9eeb;
+                                                        }
                                                     }
                                                 }
                                             }
                                         }
                                     }
+                                    @media(max-width:767px) {
+                                        flex-direction: column;
+                                        .col-left,
+                                        .col-right {
+                                            width: 100%;
+                                            padding: 0 15px;
+                                        }
+                                    }
                                 }
                                 @media(max-width:767px) {
-                                    flex-direction: column;
-                                    .col-left,
-                                    .col-right {
+                                    padding: 40px 0 50px;
+                                }
+                            }
+                            &:nth-child(4) {
+                                padding-top: 60px;
+                                .humman-desc {
+                                    animation: fadeInUp;
+                                    animation-duration: 1s;
+                                    animation-delay: 0.3s;
+                                    .humman-text {
+                                        h3 {
+                                            font-size: 30px;
+                                            line-height: 45px;
+                                            text-transform: uppercase;
+                                            margin-bottom: 15px;
+                                        }
+                                    }
+                                }
+                                .humman-thumd {
+                                    animation: fadeIn;
+                                    animation-duration: 1s;
+                                    animation-delay: 0.4s;
+                                    img {
                                         width: 100%;
-                                        padding: 0 15px;
+                                        height: 100%;
+                                        object-fit: cover;
                                     }
                                 }
-                            }
-                            @media(max-width:767px) {
-                                padding: 40px 0 50px;
-                            }
-                        }
-                        &:nth-child(4) {
-                            padding-top: 60px;
-                            .humman-desc {
-                                .humman-text {
-                                    h3 {
-                                        font-size: 30px;
-                                        line-height: 45px;
-                                        text-transform: uppercase;
-                                        margin-bottom: 15px;
-                                    }
+                                @media(max-width:767px) {
+                                    padding-top: 30px;
                                 }
-                            }
-                            .humman-thumd {
-                                img {
-                                    width: 100%;
-                                    height: 100%;
-                                    object-fit: cover;
-                                }
-                            }
-                            @media(max-width:767px) {
-                                padding-top: 30px;
                             }
                         }
                     }
                 }
                 /* tab 6 */
                 #tab6 {
-                    .wrap-humman5 {
-                        max-width: 1000px;
-                        margin: 0 auto 60px;
-                        padding: 0 15px;
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
+                    .tab-menu__about {
+                        animation: fadeInDown;
+                        animation-duration: 1s;
+                        animation-delay: 0.3s;
+                    }
+                    .tab-menu__cont {
+                        .wrap-humman5 {
+                            max-width: 1000px;
+                            margin: 0 auto 60px;
+                            padding: 0 15px;
+                            animation: fadeIn;
+                            animation-duration: 1s;
+                            animation-delay: 0.4s;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
                         }
                     }
                 }

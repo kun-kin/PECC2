@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo sát </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./lib/css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header-logo">
+                    <h1>
+                        <a href="#">
+                            <img src="./images/logo.svg" alt="">
+                        </a>
+                    </h1>
+                </div>
+                <div class="header-menu_right">
+                    <nav class="nav">
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="./index.html" class="menu-link">trang chủ</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./introduce.html" class="menu-link">giới thiệu</a>
+                            </li>
+                            <li class="menu-item active">
+                                <a href="./activity.html" class="menu-link">lĩnh vực hoạt động</a>
+                                <div class="submenu">
+                                    <div class="wrap-submenu">
+                                        <div class="submenu-item">
+                                            <h3 class="submenu-title">
+                                                <a href="./advice.html">
+                                                    tư vấn xây dựng điện
+                                                </a>
+
+                                            </h3>
+                                            <div class="submenu-cont">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://www.youtube.com/">Khảo sát</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Thủy điện & năng lượng tái tạo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Nhiệt điện và điện hạt nhân</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Lưới điện</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Đào tạo,nghiên cứu và phát triển</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Trung tâm năng lượng số</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="submenu-item">
+                                            <h3 class="submenu-title">
+                                                <a href="./business.html">
+                                                    kinh doanh
+                                                </a>
+
+                                            </h3>
+                                            <div class="submenu-cont">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Tổng thầu EFC</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Chế tạo cơ khí</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Quản lí và vận hành nhà máy điện</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="submenu-item">
+                                            <h3 class="submenu-title">
+                                                <a href="./invest.html">
+                                                    đầu tư
+                                                </a>
+
+                                            </h3>
+                                            <div class="submenu-cont">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Đầu tư</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./project.html" class="menu-link">dự án</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">quan hệ đầu tư</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./news.html" class="menu-link">tin tức</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./contact.html" class="menu-link">liên hệ</a>
+                                <div class="submenu">
+                                    <div class="wrap-submenu">
+                                        <div class="submenu-item">
+                                            <h3 class="submenu-title">
+                                                <a href="#">
+                                                    tư vấn báo giá
+                                                </a>
+
+                                            </h3>
+                                            <div class="submenu-cont"></div>
+                                        </div>
+                                        <div class="submenu-item">
+                                            <h3 class="submenu-title">
+                                                <a href="./contact.html">
+                                                    liên hệ
+                                                </a>
+
+                                            </h3>
+                                            <div class="submenu-cont"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-search">
+                        <div class="header-search__icons">
+                            <span class="icons-search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <span class="icons-close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                        </div>
+                        <div class="search-popup">
+                            <div class="search-popup__content">
+                                <form action="#" class="form-search">
+                                    <input type="text" name="search-name" id="" class="search-name" placeholder="Tìm kiếm">
+                                    <button class="search-btn">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-language">
+                        <div class="language-icons">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>VN</span>
+                        </div>
+                        <div class="language-popup">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/change_langu-vn.svg" alt="">
+                                        <span>Tiếng Việt</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/change_langu-en.svg" alt="">
+                                        <span>English</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu-toggle">
+                        <span class="style-icons"></span>
+                        <span class="style-icons"></span>
+                        <span class="style-icons"></span>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main main-activity">
+            <section class="banner">
+                <div class="wrap-banner">
+                    <div class="banner-img">
+                        <img src="./images/activity/banner_lvhd.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="menu-tab">
+                <div class="wrap-about">
+                    <div class="menu-main">
+                        <ul>
+                            <li class="active">
+                                <a href="./advice.html">tư vấn</a>
+                            </li>
+                            <li>
+                                <a href="./business.html">kinh doanh</a>
+                            </li>
+                            <li>
+                                <a href="./invest.html">đầu tư</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="activity-title">
+                <div class="wrap-about">
+                    <div class="title">
+                        <h1>
+                            TRUNG TÂM TƯ VẤN THỦY ĐIỆN & NĂNG LƯỢNG TÁI TẠO
+                        </h1>
+                    </div>
+
+                </div>
+            </section>
+            <section class="main-activity__one">
+                <div class="main-one">
+                    <div class="thumd-one">
+                        <img src="./images/activity/advice-one1.png" alt="">
+                    </div>
+                    <div class="desc-one">
+                        <div class="wrapall">
+                            <div class="content">
+                                <h1>
+                                    trung tâm tư vấn thủy điện
+                                </h1>
+                                <p>
+                                    Trong lịch sử phát triển của PECC2, với hơn 50 dự án thủy điện có quy mô từ vừa đến lớn và hàng chục các dự án thủy điện nhỏ, PECC2 đã thực hiện xuất sắc phương châm phát triển điện năng ở khu vực phía Nam nói chung và đối với lĩnh vực
+                                    thủy điện nói riêng. PECC2 đã nghiên cứu thiết kế các dự án thủy điện, tận dụng, khai thác tối đa nguồn thủy năng trên các hệ thống sông Đồng Nai, sông Bé và sông Srepok, sông Vũ Gia – Thu Bồn với tổng công suất trên
+                                    3.631 MW đã đi vào vận hành.
+                                </p>
+                                <p>
+                                    Hiện nay, PECC2 đang tích cực nghiên cứu và phát triển dịch vụ tư vấn cho các công trình năng lượng tái tạo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-two">
+                    <div class="wrapall">
+                        <div class="title">
+                            <h2>dịch vụ</h2>
+                        </div>
+                        <div class="cont">
+                            <ul>
+                                <li>Lập quy hoạch phát triển thủy điện theo dòng sông và Hệ thống sông.</li>
+                                <li>Lập Quy trình vận hành hồ chứa cho công trình thủy điện độc lập và liên hồ chứa trong hệ thống bậc thang thủy điện; Lập quy trình bảo trì các công trình thủy điện.</li>
+                                <li>Điều tra và lập báo cáo đánh giá tác động môi trường, lập phương án đền bù, giải phóng mặt bằng và hỗ trợ tái định cư.</li>
+                                <li>Thiết kế xây dựng các dự án thủy điện, thủy điện tích năng có quy mô từ nhỏ đến lớn bao gồm các giai đoạn lập Báo cáo nghiên cứu tiền khả thi, Báo cáo nghiên cứu khả thi Thiết kế kỹ thuật, Tổng dự toán, lập Bản vẽ thi công
+                                    và Giám sát tác giả.</li>
+                                <li>Lập Hồ sơ mời thầu và đánh giá Hồ sơ dự thầu các gói thầu xây lắp công trình và Cung cấp thiết bị.</li>
+                                <li>Thiết kế mở rộng, phục hồi, nâng cấp công trình thủy công và hiện đại hóa thiết bị công nghệ cho nhà máy thủy điện.</li>
+                                <li>Tư vấn giám sát thi công xây dựng và lắp đặt thiết bị; Tư vấn quản lý dự án.</li>
+                                <li>Thẩm tra thiết kế.</li>
+                                <li>Lập báo cáo kiểm định an toàn đập; Kiểm định chất lượng xây dựng công trình và các dịch vụ thí nghiệm, kiểm tra độ bền cơ học bê tông, kết cấu, vật liệu xây dựng.</li>
+                                <li>Tính toán, xây dựng phương án phòng chống lũ lụt hạ lưu công trình, có xem xét thêm kịch bản vỡ đập.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-three">
+                    <div class="main-three__item">
+                        <div class="wrapall">
+                            <div class="grap-three">
+                                <div class="item-left">
+                                    <div class="thumd">
+                                        <img src="./images/activity/advice-one3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="item-right">
+                                    <div class="title">
+                                        <h3>
+                                            ĐỘI NGŨ TƯ VẤN KỸ THUẬT CÔNG TRÌNH
+                                        </h3>
+                                    </div>
+                                    <div class="text">
+                                        Trung tâm Tư vấn Thủy điện và Năng lượng tái tạo có đội ngũ tư vấn kỹ thuật có nhiều kinh nghiệm qua quá trình thực hiện công tác tư vấn cho các dự án thủy điện, với đầy đủ các bộ môn chuyên ngành như: thủy công, tổ chức thi công, thiết bị công nghệ,
+                                        thủy văn, thủy năng, địa chất, địa hình, dự toán, môi trường và tái định cư, v.v…
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-three__item">
+                        <div class="wrapall">
+                            <div class="grap-three">
+                                <div class="item-left">
+                                    <div class="thumd">
+                                        <img src="./images/activity/advice-one4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="item-right">
+                                    <div class="title">
+                                        <h3>
+                                            CÔNG TÁC QUY HOẠCH THỦY ĐIỆN
+                                        </h3>
+                                    </div>
+                                    <div class="text">
+                                        PECC2 tham gia lập quy hoạch thủy điện quốc gia và lập báo cáo quy hoạch bậc thang thủy điện cho các sông lớn ở miền Nam, đặc biệt là sông Đồng Nai - một trong những hệ thống sông lớn của Việt Nam và lớn nhất ở miền Nam, có nguồn thủy năng lớn thứ hai
+                                        trong cả nước sau sông Đà. Tất cả các bậc thang thủy điện trên sông Đồng Nai đều được xây dựng theo đúng quy hoạch và đạt hiệu quả cao.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-for">
+                    <div class="banner-for">&nbsp;</div>
+                    <div class="banner-for">&nbsp;</div>
+                    <div class="cont-for">
+                        <div class="wrap-about">
+                            <div class="top-infor">
+                                <div class="wrapall">
+                                    <div class="title-top">
+                                        <h2>
+                                            công tác thiết kế công trình
+                                        </h2>
+                                    </div>
+                                    <div class="cont-top">
+                                        <div class="grid-cont">
+                                            <div class="grid-cont__left_top">
+                                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#tab1" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">đập chính</button>
+
+                                                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#tab2" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">đập tràn</button>
+
+                                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#tab3" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">đường ống áp lực hở</button>
+
+                                                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#tab4" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">đường hầm dẫn nước</button>
+
+                                                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#tab5" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">nhà máy thủy điện</button>
+
+                                                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#tab6" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">trạm phân phối điện</button>
+
+                                                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#tab7" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">dự án thủy điện tích năng</button>
+
+                                                </div>
+                                            </div>
+                                            <div class="grid-cont__right_top">
+                                                <div class="tab-content" id="v-pills-tabContent">
+                                                    <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                        <div class="content-infortab">
+                                                            <p>
+                                                                <img src="./images/activity/advice-one5.jpg" alt="">
+                                                            </p>
+                                                            <p>&nbsp;</p>
+                                                            <p>
+                                                                Đập đá đổ lõi giữa: cao từ 50m đến 110m, trong đó đập thủy điện Hàm Thuận cao 110m, đập đá đổ cao thứ hai tại Việt Nam.
+                                                            </p>
+                                                            <p>
+                                                                Đập bê tông đầm lăn RCC: thiết kế đập thủy điện Đồng Nai 3 cao 108m (2011) và Đồng Nai 4 cao 127m (2012), là 2 trong số 5 đập RCC cao nhất Việt Nam và là 2 trong số 30 đập RCC cao trên 100m của thế giới, cùng các đập RCC khác như đập thủy điện A Vương
+                                                                cao 80m và Đak Mi 4A cao 90m.
+                                                            </p>
+                                                            <p>
+                                                                Đập đất đồng chất: thủy điện Thác Mơ cao 45m, đập đất đá hỗn hợp thủy điện Đại Ninh cao 60m.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                        <div class="content-infortab">
+                                                            <p>
+                                                                <img src="./images/activity/advice-one6.jpg" alt="">
+                                                            </p>
+                                                            <p>&nbsp;</p>
+                                                            <p>
+                                                                Thiết kế đập tràn thủy điện Buôn Kuốp, Srêpok 3 có qui mô tràn với lưu lượng lũ thiết kế trên 11.000m3/s, tại thủy điện Trị An trên 16.000m3/s.
+                                                            </p>
+                                                            <p>PECC2 đã đề xuất và áp dụng thành công lần đầu tiên tại Việt Nam dạng đập tràn piano cho nhà máy thủy điện Đak Mi 4B, sau đó áp dụng cho các dự án thủy điện Đak Mi 2 và Đak Mi.
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                                        <div class="content-infortab">
+                                                            <p>
+                                                                <img src="./images/activity/advice-one7.jpg" alt="">
+                                                            </p>
+                                                            <p>&nbsp;</p>
+                                                            <p>
+                                                                Thiết kế đường ống hở bằng thép có cột nước tính toán 300m tại công trình thủy điện A Vương và 627m tại thủy điện Đại Ninh (cao thứ 2 tại Việt Nam).
+                                                            </p>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                        <div class="content-infortab">
+                                                            <p>
+                                                                <img src="./images/activity/advice-one8.jpg" alt="">
+                                                            </p>
+                                                            <p>&nbsp;</p>
+                                                            <p>
+                                                                Thiết kế đường hầm dài nhất Việt Nam tại công trình thủy điện Đại Ninh (11km) với biện pháp thi công đường hầm bằng công nghệ nổ mìn và đào bằng máy TBM.
+                                                            </p>
+                                                            <p>
+                                                                Các đường hầm có đường kính trên 7m tại CTTĐ Hàm Thuận-Đa Mi, Buôn Kuốp, Srêpok 3, Đồng Nai 3, Đồng Nai 4 với chiều dài từ 700m đến 5000m.
+                                                            </p>
+                                                            <p>
+                                                                Áp dụng công nghệ tính toán bỏ vỏ hầm cho các hầm như Bắc Bình, Dakr’tih, góp phần đẩy nhanh tiến độ và nâng cao hiệu quả công trình.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                        <div class="content-infortab">
+                                                            <p>
+                                                                <img src="./images/activity/advice-one9.jpg" alt="">
+                                                            </p>
+                                                            <p>&nbsp;</p>
+                                                            <p>
+                                                                Những nhà máy có công suất lắp đặt lớn: Đồng Nai 4 (2x170 MW); Đại Ninh (2x150 MW), Hàm Thuận – Đa Mi (2x150 +2x87.5 MW), Buôn Kuốp (2x140 MW), Srêpok 3 (2x110 MW), A Vương (210 MW), Đồng Nai 3 (180 MW), Đăk Mi 4 (208MW), ĐăkR’tih (144MW).
+                                                            </p>
+                                                            <p>
+                                                                Cột nước thiết kế từ 23m (Srokphumieng) đến 627m (Đại Ninh).
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                        <div class="content-infortab">
+                                                            <p>
+                                                                <img src="./images/activity/advice-one10.jpg" alt="">
+                                                            </p>
+                                                            <p>&nbsp;</p>
+                                                            <p>
+                                                                Đã thiết kế các cấp điện áp 110kV và 220kV cho các dự án thủy điện. Trong đó đã áp dụng công nghệ trạm GIS đầu tiên tại Việt Nam là trạm phân phối Hàm Thuận (7 ngăn 220kV và 4 ngăn 110kV) và Đa Mi (4 ngăn 220kV).
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="tab7" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                        <div class="content-infortab">
+                                                            <p>
+                                                                <img src="./images/activity/advice-one11.jpg" alt="">
+                                                            </p>
+                                                            <p>&nbsp;</p>
+                                                            <p>
+                                                                Đây là một lĩnh vực mới ở Việt Nam về quan điểm thiết kế, tính toán và phân tích hệ thống điện, thiết kế công nghệ, thiết kế tổ chức xây dựng đặc biệt là công trình ngầm, quan điểm vận hành nhà máy...
+                                                            </p>
+                                                            <p>
+                                                                Đập bê tông đầm lăn RCC: thiết kế đập thủy điện Đồng Nai 3 cao 108m (2011) và Đồng Nai 4 cao 127m (2012), là 2 trong số 5 đập RCC cao nhất Việt Nam và là 2 trong số 30 đập RCC cao trên 100m của thế giới, cùng các đập RCC khác như đập thủy điện A Vương
+                                                                cao 80m và Đak Mi 4A cao 90m.
+                                                            </p>
+                                                            <p>
+                                                                PECC2 đã lập Báo cáo nghiên cứu tiền khả thi đầu tư xây dựng dự án thủy điện tích năng Hàm Thuận Bắc và Báo cáo nghiên cứu khả thi đầu tư xây dựng dự án thủy điện tích năng Đơn Dương, với công suất 1200MW cho mỗi nhà máy.
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-infor">
+                                <div class="wrapall">
+                                    <div class="desc">
+                                        Hiện nay do các nhà máy thủy điện lớn trên phạm vi cả nước cơ bản hoàn thành, PECC2 đang đi tiên phong trong việc thực hiện mở rộng các nhà máy thủy điện hiện có phục vụ chạy đỉnh và thiết kế các dự án thủy điện cột nước thấp từ 2.5 – 15m là các dự án
+                                        điện xanh, sạch, thân thiện với môi trường.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-five">
+                    <div class="wrapall">
+                        <div class="title">
+                            <h2>
+                                THIẾT KẾ CÔNG TRÌNH MỞ RỘNG VÀ PHỤC HỒI / NÂNG CẤP
+                            </h2>
+                        </div>
+                        <div class="cont">
+                            <p>Đây là lĩnh vực PECC2 đã đi tiên phong tại Việt Nam:</p>
+                            <ul>
+                                <li>
+                                    Dự án phục hồi hệ thống điện Đa Nhim (2002): khôi phục và nâng cấp (sau 35 năm vận hành) 4 tuabin và máy phát điện (4x40MW), các tủ bảng và thiết bị phân phối, máy biến áp, các máy cắt và thiết bị phân phối tại nhà máy; các thiết bị cơ khí thủy công của
+                                    đập và tuyến năng lượng;
+                                </li>
+                                <li>
+                                    Dự án NM thủy điện Thác Mơ Mở rộng: Mở rộng thêm 1 tuyến năng lượng (từ hồ hiện hữu) để lắp bổ sung thêm 1 tổ máy;
+                                </li>
+                                <li>
+                                    Các dự án nâng cấp/ mở rộng/ thay mới các tổ máy cho NMTĐ nhỏ như: Suối Vàng, Đắk Nông;
+                                </li>
+                                <li>
+                                    Dự án mở rộng Nhà máy thủy điện Đa Nhim, mở rộng thêm 1 tuyến năng lượng và 1 tổ máy công suất 80MW;
+                                </li>
+                                <li>
+                                    Dự án nâng cấp và hiện đại hóa thiết bị điều khiển, bảo vệ và đo lường cho nhà máy thủy điện Trị An và nhà máy thủy điện Hòa Bình
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-six">
+                    <div class="wrapall">
+                        <div class="wrap-main">
+                            <div class="wrap-main__content">
+                                <div class="wrap-sixitem">
+                                    <div class="title">
+                                        <h3>
+                                            thẩm tra thiết kế công trình
+                                        </h3>
+                                    </div>
+                                    <div class="cont">
+                                        <ul>
+                                            <li>
+                                                Tư vấn thẩm tra thiết kế các dự án thủy điện lớn như Sông Tranh 2, Bản Chát, Huội Quảng, Sông Bung 2 và một số sự án nhỏ khác;
+                                            </li>
+                                            <li>
+                                                Thẩm tra nghiên cứu khả thi dự án thủy điện tích năng Bắc Ái.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="wrap-sixitem">
+                                    <div class="title">
+                                        <h3>
+                                            KIỂM ĐỊNH AN TOÀN ĐẬP
+                                        </h3>
+                                    </div>
+                                    <div class="the-cont">
+                                        Với lực lượng chuyên gia có kinh nghiệm và hiểu biết sâu về hầu hết các dự án thủy điện tại Việt Nam và đặc biệt là nguồn thông tin đầy đủ và phong phú, PECC2 đã thực hiện kiểm định an toàn đập cho 26 công trình thủy điện gồm tất cả các loại đập, trong
+                                        đó có những công trình lớn như: thủy điện Sơn La, Hòa Bình, Ialy, Tuyên Quang, Trị An, Đồng Nai 3&4, Đại Ninh, …
+                                    </div>
+                                </div>
+                                <div class="wrap-sixitem">
+                                    <div class="title">
+                                        <h3>
+                                            LẬP BẢN ĐỒ NGẬP LỤT HẠ DU & PHƯƠNG ÁN PHÒNG CHỐNG LŨ LỤT HẠ DU
+                                        </h3>
+                                    </div>
+                                    <div class="the-cont">
+                                        Đã thực hiện cho các công trình thủy điện như Trị An, Thác Bà, Quảng Trị, An Khê, Ka Nak, …
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-one">
+                    <div class="thumd-one">
+                        <img src="./images/activity/advice-one1.png" alt="">
+                    </div>
+                    <div class="desc-one">
+                        <div class="wrapall">
+                            <div class="content">
+                                <h1>
+                                    năng lượng tái tạo
+                                </h1>
+                                <p>
+                                    PECC2 đã chủ động xây dựng kế hoạch và chiến lược phát triển lĩnh vực năng lượng tái tạo để đáp ứng nhu cầu cấp bách về năng lượng và thực hiện “Chiến lược phát triển năng lượng quốc gia của Việt Nam đến năm 2030, tầm nhìn đến năm 2050” của Chính phủ.
+                                </p>
+                                <p>
+                                    PECC2 đang thực hiện Báo cáo đầu tư, bổ sung quy hoạch các dự án điện gió, điện trấu, điện mặt trời, đồng thời đánh giá tiềm năng các khu vực phát triển năng lượng tái tạo, ...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-two">
+                    <div class="wrapall">
+                        <div class="title">
+                            <h2>dịch vụ</h2>
+                        </div>
+                        <div class="cont">
+                            <ul>
+                                <li>
+                                    Lập quy hoạch phát triển điện mặt trời và điện gió cấp tỉnh;
+                                </li>
+                                <li>
+                                    Lập Báo cáo và nghiên cứu khả thi đầu tư xây dựng công trình các dự án điện mặt trời và điện gió;
+                                </li>
+                                <li>
+                                    Lập Báo cáo điều chỉnh, bổ sung các dự án điện mặt trời và điện gió vào Quy hoạch phát triển điện lực cấp tỉnh và Quốc gia;
+                                </li>
+                                <li>
+                                    Lập các Báo cáo đánh giá tiềm năng, Báo cáo cơ hội đầu tư, Báo cáo nghiên cứu đề xuất đầu tư các dự án điện mặt trời, điện gió;
+                                </li>
+                                <li>
+                                    Tư vấn lập Hồ sơ mời thầu các dự án điện mặt trời và điện gió;
+                                </li>
+                                <li>
+                                    Tư vấn lập thiết kế trạm đo bức xạ mặt trời và cột đo gió cho các dự án điện mặt trời và điện gió.
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-five">
+                    <div class="wrapall">
+                        <div class="title">
+                            <h2>
+                                DANH MỤC DỰ ÁN NĂNG LƯỢNG TÁI TẠO
+                            </h2>
+                        </div>
+                        <div class="cont">
+                            <ul>
+                                <li>
+                                    Lập quy hoạch phát triển điện gió tỉnh Cà Mau giai đoạn đến năm 2020, có xét đến năm 2030 đã được phê duyệt;
+                                </li>
+                                <li>
+                                    Lập quy hoạch phát triển điện mặt trời tỉnh Bình Thuận và Bình Phước giai đoạn đến năm 2020, có xét đến năm 2030;
+                                </li>
+                                <li>
+                                    Lập Báo cáo điều chỉnh, bổ sung các dự án điện mặt trời Sơn Mỹ 3 – Giai đoạn 1 và Bình An – Giai đoạn 1 vào Quy hoạch phát triển điện lực tỉnh Bình Thuận.
+                                </li>
+                                <li>
+                                    Lập Báo cáo nghiên cứu tiền khả thi đầu tư xây dựng công trình các dự án điện gió: Thái Hòa (82,5MW) và Thái Phong (52,5MW). PECC2 phối hợp công ty CP Tập đoàn Thái Bình Dương, Công ty đầu tư Mainstream Renewable Power thực hiện lập Báo cáo nghiên cứu
+                                    khả thi và thực hiện đầu tư các dự án này.
+                                </li>
+                                <li>
+                                    Lập Báo cáo nghiên cứu tiền khả thi và Báo cáo điều chỉnh, bổ sung dự án nhà máy điện trấu Hậu Giang (10MW) vào Quy hoạch phát triển điện lực tỉnh.
+                                </li>
+                                <li>
+                                    Cùng tư vấn DNV-GL lập Báo cáo nghiên cứu khả thi và tiến hành thủ tục đầu tư dự án điện gió Tân Thuận – Giai đoạn 1.
+                                </li>
+                                <li>
+                                    Lập Báo cáo nghiên cứu khả thi đầu tư xây dựng công trình dự án điện mặt trời TTĐL Vĩnh Tân – GĐ1.
+                                </li>
+                                <li>
+                                    Hoàn thành Báo cáo đánh giá tiềm năng các khu vực phát triển năng lượng tái tạo: TTĐL Vĩnh Tân, hồ thủy điện các nhà máy thủy điện: Buôn Kuốp, Buôn Tua Srah, Srepok 3...
+                                </li>
+                                <li>
+                                    Hòan thành tư vấn thiết kế lập bản vẽ thi công và mua sắm thiết bị cột đo gió dự án điện gió Tân Thuận – Giai đoạn 1, hiện đang vận hành ổn định.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="wrap-footer">
+                    <div class=" footer-item">
+                        <div class="footer-logo">
+                            <div class="footer-logo__img">
+                                <a href="#">
+                                    <img src="./images/logo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="footer-logo__desc">
+                                <img src="./images/footer_caption.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=" footer-item">
+                        <div class="footer-item__cont">
+                            <h3>trụ sở chính</h3>
+                            <p>32 Ngô Thời Nhiệm, Phường Võ Thị Sáu, Quận 3, Tp. HCM, Việt Nam</p>
+                        </div>
+                        <div class="footer-item__cont">
+                            <h3>PECC2 INNOVATION HUB</h3>
+                            <p>45 Đường Số 2, Phường Trường Thọ, Tp.Thủ Đức, Tp. HCM, Việt Nam</p>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-item__cont">
+                            <h3>XÍ NGHIỆP KHẢO SÁT (XNKSTHMN)</h3>
+                            <p>45 Dân Chủ, P.Bình Thọ, Tp.Thủ Đức,Tp.HCM</p>
+                        </div>
+                        <div class="footer-item__cont">
+                            <h3>XÍ NGHIỆP CƠ ĐIỆN</h3>
+                            <p>Đường số 6, KCN Long Khánh, Xã Bình Lộc, TP. Long Khánh, Đồng Nai</p>
+                        </div>
+                    </div>
+                    <div class=" footer-item">
+                        <div class="footer-item__social">
+                            <h3>pecc2 trên</h3>
+                            <div class="social-icons">
+                                <ul>
+                                    <li class="bg-facebook">
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="bg-youtube">
+                                        <a href="#">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li class="bg-instagram">
+                                        <a href="#">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="wrap-bottom">
+                    <span>Copyright © 2017 -2020 <strong> Công ty Cổ phần Tư vấn Xây dựng Điện 2</strong></span>
+                </div>
+            </div>
+        </footer>
+        <a id="backtotop"></a>
+        <div class="menu-mobile">
+            <div class="wrap-mobile">
+                <span class="close-menu-mobile"><i class="fa-solid fa-xmark"></i></span>
+                <div class="mobile-title">
+                    <h2>pecc2</h2>
+                </div>
+                <div class="mobile-list">
+                    <ul>
+                        <li>
+                            <a href="./index.html">trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="./introduce.html">giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="./activity.html">lĩnh vực hoạt động</a>
+                            <div class="btn-submenu">
+                            </div>
+                            <div class="submenu-mobile2">
+                                <div class="submenu-mobile2__title back-menu">
+
+                                </div>
+                                <div class="submenu-mobile2__item">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Tư vấn xây dựng điện</a>
+                                            <div class="btn-submenu">
+                                            </div>
+                                            <div class="submenu-mobile3">
+                                                <div class="submenu-mobile3__title back-menu">
+                                                </div>
+                                                <div class="submenu-mobile3__item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Khảo sát</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Thủy điện và năng lượng tái tạo</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Nhiệt điện và điện hạt nhân</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Lưới điện</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Đào tạo,Nghiên cứu và phát triển</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Trung tâm năng lực số</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kinh doanh</a>
+                                            <div class="btn-submenu">
+                                            </div>
+                                            <div class="submenu-mobile3">
+                                                <div class="submenu-mobile3__title back-menu">
+                                                </div>
+                                                <div class="submenu-mobile3__item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Tổng thầu EPC</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Chế tạo cơ khí</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Quản lí và vận hành nhà máy điện</a>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <a href="#">Đầu tư</a>
+                                            <div class="btn-submenu">
+                                            </div>
+                                            <div class="submenu-mobile3">
+                                                <div class="submenu-mobile3__title back-menu">
+                                                </div>
+                                                <div class="submenu-mobile3__item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Đầu tư</a>
+                                                        </li>
+
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./project.html">dự án</a>
+                        </li>
+                        <li>
+                            <a href="#">quan hệ đầu tư</a>
+                        </li>
+                        <li>
+                            <a href="./news.html">tin tức</a>
+                        </li>
+                        <li>
+                            <a href="#">liên hệ</a>
+                            <div class="btn-submenu">
+                            </div>
+                            <div class="submenu-mobile2">
+                                <div class="submenu-mobile2__title back-menu">
+                                </div>
+                                <div class="submenu-mobile2__item">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Tư vấn báo giá</a>
+                                        </li>
+                                        <li>
+                                            <a href="./contact.html">Liên hệ</a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-search">
+                    <form action="#" class="form-search">
+                        <input type="text" name="search-name" id="" class="search-name" placeholder="Tìm kiếm">
+                        <button class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="./lib/js/style.js"></script>
+</body>
+
+</html>
