@@ -2,9 +2,6 @@
 .header.fixed-header {
   background-color: white;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-  animation: fadeIn;
-  animation-duration: 1s;
-  animation-delay: 0.3s;
 }
 .header.fixed-header .header-menu_right {
   color: #333333 !important;
