@@ -209,12 +209,15 @@
                             }
                             @media(max-width:767px) {
                                 flex-direction: column;
+                                margin: 0;
                                 .col-left {
                                     width: 100%;
                                     margin-bottom: 20px;
+                                    padding: 0;
                                 }
                                 .col-right {
                                     width: 100%;
+                                    padding: 0;
                                     .title {
                                         h3 {
                                             font-size: 20px;

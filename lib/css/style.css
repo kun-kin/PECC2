@@ -4155,6 +4155,7 @@ main .news-main .wrap-news .title-new .content-news .viewall-news a::before {
   padding: 0 40px 0 12px;
   font-size: 15px;
   line-height: 23px;
+  color: #2a2a2a;
 }
 .contact-form .grid-item .form-col .input-form input:focus,
 .contact-form .grid-item .form-col .input-form textarea:focus {
@@ -4188,6 +4189,12 @@ main .news-main .wrap-news .title-new .content-news .viewall-news a::before {
   font-weight: bold;
   padding: 8px 30px;
   min-width: 170px;
+  transition: all 0.3s linear;
+}
+.contact-form .btn-submid button:hover {
+  background-color: transparent;
+  color: #24408f;
+  transition: all 0.3s linear;
 }
 
 .wrapper .main {
@@ -4389,13 +4396,16 @@ main .news-main .wrap-news .title-new .content-news .viewall-news a::before {
 @media (max-width: 767px) {
   .wrapper .main .main-content .advice-content__item .wrap-about .item-main {
     flex-direction: column;
+    margin: 0;
   }
   .wrapper .main .main-content .advice-content__item .wrap-about .item-main .col-left {
     width: 100%;
     margin-bottom: 20px;
+    padding: 0;
   }
   .wrapper .main .main-content .advice-content__item .wrap-about .item-main .col-right {
     width: 100%;
+    padding: 0;
   }
   .wrapper .main .main-content .advice-content__item .wrap-about .item-main .col-right .title h3 {
     font-size: 20px;
