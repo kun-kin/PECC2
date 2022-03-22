@@ -182,6 +182,31 @@
                             margin-bottom: 10px;
                         }
                     }
+                    @media(max-width:767px) {
+                        flex-direction: column;
+                        .item-left {
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                        .item-right {
+                            width: 100%;
+                        }
+                    }
+                }
+                @media(max-width:991px) {
+                    padding: 40px 0;
+                }
+                @media(max-width:767px) {
+                    &:nth-child(even) {
+                        .grap-three {
+                            .item-left {
+                                order: 1;
+                            }
+                            .item-right {
+                                order: 2;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -266,7 +291,30 @@
                                         }
                                     }
                                 }
+                                @media(max-width:767px) {
+                                    flex-direction: column;
+                                    &__left_top {
+                                        width: 100%;
+                                        .flex-column {
+                                            display: flex;
+                                            flex-direction: inherit !important;
+                                            flex-wrap: nowrap;
+                                            overflow-x: auto;
+                                            white-space: nowrap;
+                                            margin-left: 0 !important;
+                                            &::-webkit-scrollbar {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                    &__right_top {
+                                        width: 100%;
+                                    }
+                                }
                             }
+                        }
+                        @media(max-width:767px) {
+                            margin-top: -110px;
                         }
                     }
                     .bottom-infor {
