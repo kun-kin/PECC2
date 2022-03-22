@@ -51,6 +51,17 @@ a {
     width: 7px;
 }
 
+main {
+    @media(max-width: 991px) {
+        padding-top: 70px !important;
+        .banner-img {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
 
 /* Track */
 

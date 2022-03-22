@@ -20,16 +20,16 @@ main {
             }
             &_item {
                 position: relative;
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    height: 200px;
-                    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
-                    z-index: 2;
-                }
+                // &::before {
+                //     content: '';
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     right: 0;
+                //     height: 200px;
+                //     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+                //     z-index: 2;
+                // }
                 &::after {
                     content: '';
                     position: absolute;
@@ -81,6 +81,11 @@ main {
                         line-height: 24px;
                     }
                 }
+                @media(max-width:991px) {
+                    &::after {
+                        height: 100px;
+                    }
+                }
             }
             .slick-arrow {
                 display: none !important;
@@ -113,6 +118,11 @@ main {
         }
         .banner-slide__content.slick-slider {
             margin-bottom: 0;
+        }
+        @media(max-width:991px) {
+            &::before {
+                display: none;
+            }
         }
     }
     .about {
@@ -1001,12 +1011,11 @@ main {
                         padding: 0 15px;
                         ul {
                             display: flex;
-                            justify-content: center;
-                            @media(max-width: 767px) {
-                                justify-content: flex-start;
-                                overflow: auto;
-                                white-space: nowrap;
-                                overflow: hidden;
+                            justify-content: flex-start;
+                            overflow-x: auto;
+                            white-space: nowrap;
+                            &::-webkit-scrollbar {
+                                display: none;
                             }
                             li {
                                 list-style: none;

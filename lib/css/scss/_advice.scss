@@ -54,6 +54,9 @@
                     height: 100%;
                     object-fit: cover;
                 }
+                @media(max-width:991px) {
+                    height: auto !important;
+                }
             }
         }
         .menu-tab {
@@ -73,6 +76,9 @@
                         position: relative;
                         z-index: 2;
                         white-space: nowrap;
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
                         li {
                             &:not(:last-child) {
                                 border-right: 1px solid rgba(0, 0, 0, 0.1);
@@ -109,6 +115,9 @@
                     text-align: center;
                     .title {
                         margin-bottom: 20px;
+                        animation: fadeInDown;
+                        animation-duration: 1s;
+                        animation-delay: 0.2s;
                     }
                     .text {
                         max-width: 980px;
@@ -141,6 +150,9 @@
                             .col-left {
                                 width: calc(50% + 40px);
                                 padding: 0 45px;
+                                animation: fadeInRight;
+                                animation-duration: 1s;
+                                animation-delay: 0.3s;
                                 .thumd {
                                     overflow: hidden;
                                     img {
@@ -158,6 +170,9 @@
                             .col-right {
                                 width: calc(50% - 40px);
                                 padding: 0 45px;
+                                animation: fadeInLeft;
+                                animation-duration: 1s;
+                                animation-delay: 0.3s;
                                 .desc {
                                     .title {
                                         margin-bottom: 10px;
@@ -192,7 +207,38 @@
                                     }
                                 }
                             }
+                            @media(max-width:767px) {
+                                flex-direction: column;
+                                .col-left {
+                                    width: 100%;
+                                    margin-bottom: 20px;
+                                }
+                                .col-right {
+                                    width: 100%;
+                                    .title {
+                                        h3 {
+                                            font-size: 20px;
+                                            line-height: 30px;
+                                        }
+                                    }
+                                }
+                            }
                         }
+                    }
+                    @media(max-width:767px) {
+                        &:nth-child(even) {
+                            .item-main {
+                                .col-left {
+                                    order: 1;
+                                }
+                                .col-right {
+                                    order: 2;
+                                }
+                            }
+                        }
+                    }
+                    @media(max-width:991px) {
+                        padding: 40px 0;
                     }
                 }
             }

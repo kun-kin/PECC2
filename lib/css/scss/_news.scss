@@ -51,6 +51,11 @@
                     object-fit: cover;
                 }
             }
+            @media(max-width:991px) {
+                &::before {
+                    display: none;
+                }
+            }
         }
     }
     /* tab menu */
@@ -71,6 +76,9 @@
                 position: relative;
                 z-index: 2;
                 white-space: nowrap;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
                 li {
                     &:not(:last-child) {
                         border-right: 1px solid rgba(0, 0, 0, 0.1);
@@ -86,6 +94,12 @@
                             background-color: #064396;
                             color: #fff;
                         }
+                    }
+                }
+                li.current {
+                    a {
+                        background-color: #064396;
+                        color: #fff;
                     }
                 }
             }
@@ -350,6 +364,55 @@
                             }
                             @media(max-width:767px) {
                                 flex-direction: column;
+                            }
+                        }
+                    }
+                    .pagination {
+                        display: block;
+                        &-container {
+                            nav {
+                                display: flex;
+                                justify-content: center;
+                            }
+                            ul {
+                                display: flex;
+                                align-items: center;
+                                li {
+                                    display: inline-block;
+                                    margin-left: 10px;
+                                    a {
+                                        display: table-cell;
+                                        width: 40px;
+                                        height: 40px;
+                                        box-sizing: border-box;
+                                        font-size: 18px;
+                                        line-height: 26px;
+                                        vertical-align: middle;
+                                        color: #333333;
+                                        transition: none;
+                                        border: solid 1px #d0d0d0;
+                                        text-align: center;
+                                        font-weight: bold;
+                                        background: transparent;
+                                        border-color: #eff1f4;
+                                        background-color: #eff1f4;
+                                        i {
+                                            font-family: 'fontawesome';
+                                        }
+                                        &:hover {
+                                            border-color: #24408f;
+                                            background-color: #24408f;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                                li.current {
+                                    a {
+                                        border-color: #24408f;
+                                        background-color: #24408f;
+                                        color: #fff;
+                                    }
+                                }
                             }
                         }
                     }

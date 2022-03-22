@@ -1,4 +1,19 @@
 .main-activity {
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 320px;
+        height: 250px;
+        background-image: url('../.././images/bgbanner.png');
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 3;
+        pointer-events: none;
+    }
     .wrap-about {
         max-width: 1200px;
         margin: 0 auto;
@@ -7,20 +22,6 @@
     .banner {
         .wrap-banner {
             position: relative;
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 320px;
-                height: 250px;
-                background-image: url('../.././images/bgbanner.png');
-                background-position: left top;
-                background-repeat: no-repeat;
-                background-size: contain;
-                z-index: 3;
-                pointer-events: none;
-            }
             .banner-img {
                 background: url('../.././images/activity/banner_lvhd.jpg') no-repeat;
                 background-position: center;
@@ -60,6 +61,10 @@
                     line-height: 45px;
                     font-weight: 400;
                     text-transform: uppercase;
+                    @media(max-width: 991px) {
+                        font-size: 25px;
+                        line-height: 37px;
+                    }
                 }
             }
             .cont {
