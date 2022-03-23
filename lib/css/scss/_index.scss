@@ -198,6 +198,9 @@ main {
                             font-weight: bold;
                             color: rgb(51, 51, 51);
                             transition: all 0.5s linear;
+                            &:hover {
+                                color: #064396;
+                            }
                         }
                     }
                     @media(max-width:767px) {
@@ -364,9 +367,20 @@ main {
                             width: 440px;
                             height: 440px;
                             position: relative;
-                            z-index: 1;
+                            z-index: 55;
                             transition: all 0.3s linear;
-                            animation: rollIn 1s ease-in-out;
+                            // animation: rollIn 1s ease-in-out;
+                            animation: roll 1s ease-in-out;
+                            @keyframes roll {
+                                from {
+                                    opacity: 0;
+                                    transform: translateX(-100%) rotate(-45deg);
+                                }
+                                to {
+                                    opacity: 1;
+                                    transform: translateX(0) rotate(0deg);
+                                }
+                            }
                             @media(max-width: 991px) {
                                 margin: 0 auto 30px;
                             }
@@ -1009,6 +1023,10 @@ main {
                     .tabmenu-news {
                         margin-bottom: 30px;
                         padding: 0 15px;
+                        .tab-menu {
+                            display: flex;
+                            justify-content: center;
+                        }
                         ul {
                             display: flex;
                             justify-content: flex-start;
@@ -1119,20 +1137,17 @@ main {
                                 .slider-nav {
                                     animation: fadeInUp 1s ease-in-out;
                                     animation-delay: 0.3s;
-                                    .slider-nav {
-                                        .slide-news-img {
-                                            width: 50px;
-                                            height: 40px;
-                                        }
+                                    .slick-list {
+                                        margin: 0 -7px;
+                                    }
+                                    .slick-slide {
+                                        padding: 8px;
+                                        opacity: 0.4;
                                         img {
                                             width: 100%;
                                             height: 100%;
                                             object-fit: cover;
                                         }
-                                    }
-                                    .slick-slide {
-                                        padding: 8px;
-                                        opacity: 0.4;
                                     }
                                     .slick-slide.slick-current {
                                         opacity: 1;
@@ -1143,6 +1158,13 @@ main {
                                         width: 100%;
                                         height: 100%;
                                         object-fit: cover;
+                                        transition: transform 4s cubic-bezier(0, .6, .45, 1);
+                                        ;
+                                        &:hover {
+                                            transform: scale(1.025);
+                                            transition: transform 4s cubic-bezier(0, .6, .45, 1);
+                                            ;
+                                        }
                                     }
                                 }
                             }
@@ -1157,7 +1179,7 @@ main {
                                         animation: fadeInUp 1s ease-in-out;
                                         animation-delay: 0.2s;
                                         &:not(:last-child) {
-                                            border-bottom: 2px solid #a59e9f;
+                                            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
                                         }
                                         &_left {
                                             width: 40%;
@@ -1214,7 +1236,11 @@ main {
                                     position: absolute;
                                     top: 50%;
                                     right: 6px;
-                                    transform: translateY(-50%);
+                                    transform: translate(6px, -50%);
+                                    transition: all 0.3s linear;
+                                }
+                                &:hover {
+                                    color: #064396;
                                 }
                             }
                         }

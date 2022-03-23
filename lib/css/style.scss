@@ -3,6 +3,7 @@
 @import './scss/introduce';
 @import './scss/activity';
 @import './scss/project';
+@import './scss/news1-1';
 @import './scss/news';
 @import './scss/contact';
 @import './scss/advice';
@@ -41,6 +42,7 @@ a {
     color: #333333;
     &:hover {
         text-decoration: none;
+        color: #064396;
     }
 }
 
@@ -61,6 +63,12 @@ main {
             }
         }
     }
+}
+
+.wrapall {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 
