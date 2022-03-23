@@ -208,54 +208,61 @@
                 <div class="contact-title">
                     <div class="wrap-about">
                         <h1>yêu cầu dịch vụ</h1>
-                    </div>
-                    <div class="contact-form">
-                        <form action="" class="contact-form__main">
-                            <div class="grid-item">
-                                <div class="form-col">
-                                    <div class="title-form">
-                                        <h3>thông tin khách hàng</h3>
+                        <div class="contact-form">
+                            <form action="" name="contact-form" class="contact-form__main" onsubmit="validateform();">
+                                <div class="grid-item">
+                                    <div class="form-col">
+                                        <div class="title-form">
+                                            <h3>thông tin khách hàng</h3>
+                                        </div>
+                                        <div class="input-form">
+                                            <input type="text" name="" id="" placeholder="Đơn vị*">
+                                        </div>
+                                        <div class="input-form">
+                                            <input type="text" name="" id="" placeholder="Họ tên*">
+                                        </div>
+                                        <div class="input-form">
+                                            <input type="text" name="" id="" placeholder="Tel">
+                                        </div>
+                                        <div class="input-form">
+                                            <input type="text" name="" id="" placeholder="Email">
+                                        </div>
+                                        <div class="input-form">
+                                            <input type="text" name="" id="" placeholder="Đại chỉ">
+                                        </div>
                                     </div>
-                                    <div class="input-form">
-                                        <input type="text" name="" id="" placeholder="Đơn vị*">
-                                    </div>
-                                    <div class="input-form">
-                                        <input type="text" name="" id="" placeholder="Họ tên*">
-                                    </div>
-                                    <div class="input-form">
-                                        <input type="text" name="" id="" placeholder="Tel">
-                                    </div>
-                                    <div class="input-form">
-                                        <input type="text" name="" id="" placeholder="Email">
-                                    </div>
-                                    <div class="input-form">
-                                        <input type="text" name="" id="" placeholder="Đại chỉ">
-                                    </div>
-                                </div>
-                                <div class="form-col">
-                                    <div class="title-form">
-                                        <h3>thông tin dự án</h3>
-                                    </div>
-                                    <div class="input-form">
-                                        <input type="text" name="" id="" placeholder="Tên dự án*">
-                                    </div>
-                                    <div class="input-form">
-                                        <input type="text" name="" id="" placeholder="Quy mô/Công xuất*">
-                                    </div>
-                                    <div class="input-form">
-                                        <input type="text" name="" id="" placeholder="Đại điểm dự án*">
-                                    </div>
-                                    <div class="input-form">
-                                        <textarea rows="2" cols="" placeholder="Yêu cầu của khách hàng đối với PECC2"></textarea>
-                                    </div>
+                                    <div class="form-col">
+                                        <div class="title-form">
+                                            <h3>thông tin dự án</h3>
+                                        </div>
+                                        <div class="input-form">
+                                            <input type="text" name="" id="" placeholder="Tên dự án*">
+                                        </div>
+                                        <div class="input-form">
+                                            <input type="text" name="" id="" placeholder="Quy mô/Công xuất*">
+                                        </div>
+                                        <div class="input-form">
+                                            <input type="text" name="" id="" placeholder="Đại điểm dự án*">
+                                        </div>
+                                        <div class="input-form">
+                                            <textarea rows="2" cols="" placeholder="Yêu cầu của khách hàng đối với PECC2"></textarea>
+                                        </div>
 
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="btn-submid">
-                                <button type="submid">gửi</button>
-                            </div>
-                        </form>
+
+                                <!-- captcha -->
+                                <div id="recaptcha" class="g-recaptcha" data-sitekey="6LdgGAMfAAAAAHVyriLRYS_gpDsnMTxFZVWjCeSw"></div>
+                                <div class="error-message"></div>
+                                <!-- end captcha -->
+
+                                <div class="btn-submid">
+                                    <button type="submid">gửi</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
+
                 </div>
             </section>
         </main>
@@ -489,7 +496,13 @@
     <script>
         new WOW().init();
     </script>
+
+    <!-- captcha -->
+    <script async="" defer="" src="https://www.google.com/recaptcha/api.js"></script>
     <script src="./lib/js/style.js"></script>
+
+    <script>
+    </script>
 </body>
 
 </html>
