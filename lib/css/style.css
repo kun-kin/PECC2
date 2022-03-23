@@ -3660,6 +3660,14 @@ main .news-main .wrap-news .title-new .content-news .viewall-news a:hover {
   top: 50%;
   transform: translateY(-50%);
 }
+.boxorther .lstorther br {
+  display: none;
+}
+@media (max-width: 991px) {
+  .boxorther .lstorther br {
+    display: block;
+  }
+}
 
 .main-news {
   /* tab menu */
