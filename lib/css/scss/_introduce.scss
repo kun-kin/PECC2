@@ -1049,42 +1049,149 @@
                     }
                     .humman-slide7 {
                         position: relative;
-                        // height: 305px;
                         background-color: #24408f;
-                        &::before {
-                            content: '';
-                            // position: absolute;
-                            top: 0px;
-                            left: 0px;
-                            background-color: rgba(36, 64, 143, 0.8);
-                            width: 100%;
-                            height: 100%;
-                            pointer-events: none;
-                            z-index: 1;
-                        }
-                        .wrap-about {
-                            text-align: center;
-                            margin: 0 auto;
-                            position: relative;
-                            .wrap-sli {
-                                .div {
-                                    max-height: 305px;
-                                    width: 100%;
-                                    height: 305px;
+                        // &::before {
+                        //     content: '';
+                        //     position: absolute;
+                        //     width: 100%;
+                        //     height: 50%;
+                        //     background-color: white;
+                        //     left: 0;
+                        //     bottom: 0;
+                        // }
+                        .humman-slide__main {
+                            .wrap-about {
+                                text-align: center;
+                                margin: 0 auto;
+                                position: relative;
+                                .wrap-sli {
                                     position: relative;
-                                    &-content {
-                                        height: 175px;
-                                        margin: auto;
-                                        // top: 65px !important;
-                                        position: absolute;
-                                        left: 0;
-                                        top: 50%;
-                                        transform: translateY(-50%);
-                                    }
-                                    img {
-                                        width: 100%;
+                                    overflow: hidden;
+                                    display: block;
+                                    margin: 0 auto;
+                                    height: 520px !important;
+                                    .humman-slide {
                                         height: 100%;
-                                        object-fit: cover;
+                                        .owl-stage-outer {
+                                            height: 100%;
+                                            .owl-item {
+                                                padding: 0 10px;
+                                                margin-right: 0 !important;
+                                                top: 65px;
+                                                position: relative;
+                                                &::before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    top: 0px;
+                                                    left: 0px;
+                                                    background-color: rgba(36, 64, 143, 0.8);
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    pointer-events: none;
+                                                    z-index: 1;
+                                                }
+                                                .item-cont {
+                                                    height: 250px;
+                                                    background-color: #ffffff;
+                                                    position: relative;
+                                                    border-radius: 5px;
+                                                    img {
+                                                        position: absolute;
+                                                        top: 50%;
+                                                        left: 50%;
+                                                        transform: translate(-50%, -50%);
+                                                        max-width: 95%;
+                                                        max-height: 90%;
+                                                        object-fit: contain;
+                                                    }
+                                                    .item-cont__content {
+                                                        position: absolute;
+                                                        background-color: rgb(255, 255, 255);
+                                                        left: 0;
+                                                        opacity: 0;
+                                                        visibility: hidden;
+                                                        display: flex;
+                                                        justify-content: flex-end;
+                                                        flex-direction: column;
+                                                        height: 210px;
+                                                        bottom: -200px;
+                                                        width: 100%;
+                                                        padding: 80px 53px 15px;
+                                                        transition: all 0.3s linear;
+                                                        @media(max-width: 991px) {
+                                                            padding: 45px 12px 12px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            .owl-item.active.center {
+                                                &::before {
+                                                    z-index: 0;
+                                                }
+                                                .item-cont {
+                                                    &__content {
+                                                        opacity: 1;
+                                                        visibility: visible;
+                                                        animation: fadeIn;
+                                                        // animation-duration: 1s;
+                                                        animation-delay: 0.2s;
+                                                        transition: all 0.3s linear;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .owl-nav {
+                                            display: block;
+                                            margin-top: 0;
+                                            top: -70%;
+                                            transform: translate(0, 50%);
+                                            font-size: 36px;
+                                            line-height: 45px;
+                                            color: white;
+                                            position: relative;
+                                            button {
+                                                width: 50px;
+                                                height: 50px;
+                                                border-radius: 50%;
+                                                position: relative;
+                                                i {
+                                                    display: none;
+                                                }
+                                            }
+                                            .owl-prev {
+                                                left: -130px;
+                                                &::before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    left: 0;
+                                                    bottom: 0;
+                                                    background: url('../.././images/introduce/prev.png');
+                                                }
+                                                @media(max-width:540px) {
+                                                    left: -110px;
+                                                }
+                                            }
+                                            .owl-next {
+                                                right: -130px;
+                                                &::before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    left: 0;
+                                                    bottom: 0;
+                                                    background: url('../.././images/introduce/next.png');
+                                                }
+                                                @media(max-width:540px) {
+                                                    right: -110px;
+                                                }
+                                            }
+                                        }
+                                        .owl-dots {
+                                            display: none;
+                                        }
                                     }
                                 }
                             }
@@ -1093,6 +1200,7 @@
                     .humman-contitle {
                         padding: 60px 0 40px;
                         background-color: #eff1f4;
+                        margin-top: -100px;
                         .wrap-about {
                             max-width: 1200px;
                             margin: 0 auto;
@@ -1106,7 +1214,22 @@
                                 color: transparent;
                                 white-space: nowrap;
                                 text-transform: uppercase;
+                                @media(max-width: 1200px) {
+                                    font-size: 120px;
+                                    line-height: 120px;
+                                }
+                                @media(max-width:991px) {
+                                    font-size: 60px;
+                                    line-height: 60px;
+                                }
+                                @media(max-width:767px) {
+                                    font-size: 45px;
+                                    line-height: 45px;
+                                }
                             }
+                        }
+                        @media(max-width:991px) {
+                            margin-top: -50px;
                         }
                     }
                 }
