@@ -2968,25 +2968,29 @@ main .news-main .wrap-news .title-new .content-news .viewall-news a:hover {
   pointer-events: none;
   z-index: 1;
 }
-.wrapper .main-introduce .tab-menu .tab-content #tab7 .humman-slide7 .wrap {
+.wrapper .main-introduce .tab-menu .tab-content #tab7 .humman-slide7 .wrap-about {
   text-align: center;
   margin: 0 auto;
   position: relative;
 }
-.wrapper .main-introduce .tab-menu .tab-content #tab7 .humman-slide7 .wrap .main {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.wrapper .main-introduce .tab-menu .tab-content #tab7 .humman-slide7 .wrap .main .your-class {
-  padding: 0;
+.wrapper .main-introduce .tab-menu .tab-content #tab7 .humman-slide7 .wrap-about .wrap-sli .div {
+  max-height: 305px;
+  width: 100%;
+  height: 305px;
   position: relative;
-  overflow: hidden;
-  display: block;
-  margin: 0 auto;
-  height: 305px !important;
 }
-.wrapper .main-introduce .tab-menu .tab-content #tab7 .humman-slide7 .wrap .main .your-class .class {
-  top: 40px;
+.wrapper .main-introduce .tab-menu .tab-content #tab7 .humman-slide7 .wrap-about .wrap-sli .div-content {
+  height: 175px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrapper .main-introduce .tab-menu .tab-content #tab7 .humman-slide7 .wrap-about .wrap-sli .div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .wrapper .main-introduce .tab-menu .tab-content #tab7 .humman-contitle {
   padding: 60px 0 40px;
@@ -5356,6 +5360,12 @@ a:hover {
 
 .wrapall {
   max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrap-about {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
